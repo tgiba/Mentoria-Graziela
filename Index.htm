@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"NRBR-8547a290c864571ffcc","applicationID":"93979317","transactionName":"bgQDMEcFXkJZBkYNWldOJxFbB0RYVwsdBUVJTwwNUQBcVE8EQAEbWA8ACEwQWVJLX3MKVFUYFQ1WF31YXAFeAUJYEwQ=","queueTime":0,"applicationTime":133,"agent":""};
+(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"NRBR-8547a290c864571ffcc",applicationID:"93979317",browserID:"1834886802"};;/*! For license information please see nr-loader-rum-1.316.0.min.js.LICENSE.txt */
+(()=>{var e,t,r={122:(e,t,r)=>{"use strict";r.d(t,{a:()=>i});var n=r(944);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.R)(3);if(!t||"object"!=typeof t)return(0,n.R)(4);const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),s=0===Object.keys(r).length?e:r;for(let o in s)if(void 0!==e[o])try{if(null===e[o]){r[o]=null;continue}Array.isArray(e[o])&&Array.isArray(t[o])?r[o]=Array.from(new Set([...e[o],...t[o]])):e[o]instanceof Map||e[o]instanceof Set||e[o]instanceof Date||e[o]instanceof RegExp?r[o]=e[o]:"object"==typeof e[o]&&"object"==typeof t[o]?r[o]=i(e[o],t[o]):r[o]=e[o]}catch(e){r[o]||(0,n.R)(1,e)}return r}catch(e){(0,n.R)(2,e)}}},154:(e,t,r)=>{"use strict";r.d(t,{OF:()=>u,RI:()=>i,WN:()=>l,bv:()=>s,gm:()=>o,m:()=>c,mw:()=>a,sb:()=>d,zk:()=>f});var n=r(863);const i="undefined"!=typeof window&&!!window.document,s="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=i?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=((()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);Array.isArray(e)&&e.length>=2&&e[1]})(),Date.now()-(0,n.t)()),f=()=>{const e=o?.performance?.getEntriesByType?.("navigation")?.[0];if(e&&e.responseStart>0&&e.responseStart<o.performance.now())return e}},234:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(687);class i{constructor(e,t){this.agentRef=e,this.ee=e?.ee,this.featureName=t,this.blocked=!1}deregisterDrain(){(0,n.x3)(this.agentRef,this.featureName)}}},241:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(154);const i="newrelic";function s(e={}){try{n.gm.dispatchEvent(new CustomEvent(i,{detail:e}))}catch(e){}}},261:(e,t,r)=>{"use strict";r.d(t,{$9:()=>u,BL:()=>a,CH:()=>g,Dl:()=>_,Fw:()=>y,PA:()=>h,Pl:()=>n,Pv:()=>k,Tb:()=>l,U2:()=>s,V1:()=>R,Wb:()=>x,bt:()=>b,cD:()=>v,d3:()=>w,dT:()=>c,eY:()=>p,fF:()=>f,hG:()=>i,k6:()=>o,nb:()=>m,o5:()=>d});const n="api-",i="addPageAction",s="addToTrace",o="addRelease",a="finished",c="interaction",u="log",d="noticeError",l="pauseReplay",f="recordCustomEvent",g="recordReplay",p="register",m="setApplicationVersion",h="setCurrentRouteName",v="setCustomAttribute",b="setErrorHandler",y="setPageViewName",_="setUserId",w="start",x="wrapLogger",R="measure",k="consent"},289:(e,t,r)=>{"use strict";r.d(t,{GG:()=>o,Qr:()=>c,sB:()=>a});var n=r(878),i=r(389);function s(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(s())return e();const r=(0,i.J)(e),o=setInterval(()=>{s()&&(clearInterval(o),r())},500);(0,n.sp)("load",r,t)}function a(e){if(s())return e();(0,n.DD)("DOMContentLoaded",e)}function c(e){if(s())return e();(0,n.sp)("popstate",e)}},324:(e,t,r)=>{"use strict";r.d(t,{F3:()=>i,Xs:()=>s,xv:()=>n});const n="1.316.0",i="PROD",s="CDN"},362:(e,t,r)=>{"use strict";r.d(t,{d:()=>s});var n=r(566),i=r(741);class s extends i.W{agentIdentifier=(0,n.LA)(16)}},374:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},384:(e,t,r)=>{"use strict";r.d(t,{NT:()=>a,Zm:()=>c,bQ:()=>d,dV:()=>u,pV:()=>l});var n=r(154),i=r(863),s=r(944),o=r(910);const a={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function c(){return n.gm.NREUM||(n.gm.NREUM={}),void 0===n.gm.newrelic&&(n.gm.newrelic=n.gm.NREUM),n.gm.NREUM}function u(){let e=c();return e.o||(e.o={ST:n.gm.setTimeout,SI:n.gm.setImmediate||n.gm.setInterval,CT:n.gm.clearTimeout,XHR:n.gm.XMLHttpRequest,REQ:n.gm.Request,EV:n.gm.Event,PR:n.gm.Promise,MO:n.gm.MutationObserver,FETCH:n.gm.fetch,WS:n.gm.WebSocket},(0,o.i)(...Object.values(e.o))),e}function d(e,t){let r=c();r.initializedAgents??={},t.initializedAt={ms:(0,i.t)(),date:new Date},r.initializedAgents[e]=t,2===Object.keys(r.initializedAgents).length&&(0,s.R)(69)}function l(){return function(){let e=c();const t=e.info||{};e.info={beacon:a.beacon,errorBeacon:a.errorBeacon,...t}}(),function(){let e=c();const t=e.init||{};e.init={...t}}(),u(),function(){let e=c();const t=e.loader_config||{};e.loader_config={...t}}(),c()}},389:(e,t,r)=>{"use strict";function n(e,t=500,r={}){const n=r?.leading||!1;let i;return(...r)=>{n&&void 0===i&&(e.apply(this,r),i=setTimeout(()=>{i=clearTimeout(i)},t)),n||(clearTimeout(i),i=setTimeout(()=>{e.apply(this,r)},t))}}function i(e){let t=!1;return(...r)=>{t||(t=!0,e.apply(this,r))}}r.d(t,{J:()=>i,s:()=>n})},555:(e,t,r)=>{"use strict";r.d(t,{D:()=>a,f:()=>o});var n=r(384),i=r(122);const s={beacon:n.NT.beacon,errorBeacon:n.NT.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0};function o(e){try{return!!e.licenseKey&&!!e.errorBeacon&&!!e.applicationID}catch(e){return!1}}const a=e=>(0,i.a)(e,s)},566:(e,t,r)=>{"use strict";r.d(t,{LA:()=>a,bz:()=>o});var n=r(154);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function s(e,t){return e?15&e[t]:16*Math.random()|0}function o(){const e=n.gm?.crypto||n.gm?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map(e=>"x"===e?s(t,r++).toString(16):"y"===e?(3&s()|8).toString(16):e).join("")}function a(e){const t=n.gm?.crypto||n.gm?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const o=[];for(var a=0;a<e;a++)o.push(s(r,i++).toString(16));return o.join("")}},606:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(908);s.on=o;var i=s.handlers={};function s(e,t,r,s){o(s||n.d,i,e,t,r)}function o(e,t,r,i,s){s||(s="feature"),e||(e=n.d);var o=t[s]=t[s]||{};(o[r]=o[r]||[]).push([e,i])}},607:(e,t,r)=>{"use strict";r.d(t,{W:()=>n});const n=(0,r(566).bz)()},614:(e,t,r)=>{"use strict";r.d(t,{BB:()=>s,Wt:()=>n,g:()=>c,iL:()=>a,tS:()=>o,wk:()=>i});const n="NRBA_SESSION::",i=144e5,s=18e5,o={STARTED:"session-started",PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},a={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},c={OFF:0,FULL:1,ERROR:2}},630:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewEvent},646:(e,t,r)=>{"use strict";r.d(t,{y:()=>n});class n{constructor(e){this.contextId=e}}},687:(e,t,r)=>{"use strict";r.d(t,{Ak:()=>a,Ze:()=>u,x3:()=>c});var n=r(241),i=r(606),s=r(860),o=r(646);function a(e,t){if(!e)return;const r={staged:!1,priority:s.P3[t]||0};e.runtime.drainRegistry.get(t)||e.runtime.drainRegistry.set(t,r)}function c(e,t){if(!e)return;const r=e.runtime.drainRegistry;r&&(r.get(t)&&r.delete(t),l(e,t,!1),r.size&&d(e))}function u(e,t="feature",r=!1){if(e){if(!e.runtime.drainRegistry.get(t)||r)return l(e,t);e.runtime.drainRegistry.get(t).staged=!0,d(e)}}function d(e){if(!e)return;const t=Array.from(e.runtime.drainRegistry);t.every(([e,t])=>t.staged)&&(t.sort((e,t)=>e[1].priority-t[1].priority),t.forEach(([t])=>{e.runtime.drainRegistry.delete(t),l(e,t)}))}function l(e,t,r=!0){if(!e)return;const s=e.ee,a=i.i.handlers;if(s&&!s.aborted&&s.backlog&&a){if((0,n.W)({type:"lifecycle",name:"drain",feature:t}),r){const e=s.backlog[t],r=a[t];if(r){for(let t=0;e&&t<e.length;++t)f(e[t],r);Object.entries(r).forEach(([e,t])=>{Object.values(t||{}).forEach(t=>{t[0]?.on&&t[0].context()instanceof o.y&&!t[0].listeners(e).includes(t[1])&&t[0].on(e,t[1])})})}}s.isolatedBacklog||delete a[t],s.backlog[t]=null,s.emit("drain-"+t,[])}}function f(e,t){var r=e[1];Object.values(t[r]||{}).forEach(t=>{var r=e[0];if(t[0]===r){var n=t[1],i=e[3],s=e[2];n.apply(i,s)}})}},699:(e,t,r)=>{"use strict";r.d(t,{It:()=>s,KC:()=>a,No:()=>i,qh:()=>o});var n=r(860);const i=16e3,s=1e6,o="SESSION_ERROR",a={[n.K7.logging]:!0,[n.K7.genericEvents]:!0,[n.K7.jserrors]:!0,[n.K7.ajax]:!0}},738:(e,t,r)=>{"use strict";r.d(t,{U:()=>f,Y:()=>l});var n=r(241),i=r(908),s=r(863),o=r(944),a=r(969),c=r(362),u=r(860),d=r(261);function l(e,t,r,s){const l=s||r;!l||l[e]&&l[e]!==c.d.prototype[e]||(l[e]=function(){(0,i.p)(a.xV,["API/"+e+"/called"],void 0,u.K7.metrics,r.ee),(0,n.W)({drained:!!r.runtime?.activatedFeatures,type:"data",name:"api",feature:d.Pl+e,data:{}});try{return t.apply(this,arguments)}catch(e){(0,o.R)(23,e)}})}function f(e,t,r,n,o){const a=e.info;null===r?delete a.jsAttributes[t]:a.jsAttributes[t]=r,(o||null===r)&&(0,i.p)(d.Pl+n,[(0,s.t)(),t,r],void 0,"session",e.ee)}},741:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(944),i=r(261);class s{#e(e,...t){if(this[e]!==s.prototype[e])return this[e](...t);(0,n.R)(35,e)}addPageAction(e,t){return this.#e(i.hG,e,t)}register(e){return this.#e(i.eY,e)}recordCustomEvent(e,t){return this.#e(i.fF,e,t)}setPageViewName(e,t){return this.#e(i.Fw,e,t)}setCustomAttribute(e,t,r){return this.#e(i.cD,e,t,r)}noticeError(e,t){return this.#e(i.o5,e,t)}setUserId(e,t=!1){return this.#e(i.Dl,e,t)}setApplicationVersion(e){return this.#e(i.nb,e)}setErrorHandler(e){return this.#e(i.bt,e)}addRelease(e,t){return this.#e(i.k6,e,t)}log(e,t){return this.#e(i.$9,e,t)}start(){return this.#e(i.d3)}finished(e){return this.#e(i.BL,e)}recordReplay(){return this.#e(i.CH)}pauseReplay(){return this.#e(i.Tb)}addToTrace(e){return this.#e(i.U2,e)}setCurrentRouteName(e){return this.#e(i.PA,e)}interaction(e){return this.#e(i.dT,e)}wrapLogger(e,t,r){return this.#e(i.Wb,e,t,r)}measure(e,t){return this.#e(i.V1,e,t)}consent(e){return this.#e(i.Pv,e)}}},782:(e,t,r)=>{"use strict";r.d(t,{T:()=>n});const n=r(860).K7.pageViewTiming},836:(e,t,r)=>{"use strict";r.d(t,{P:()=>a,ee:()=>c});var n=r(384),i=r(990),s=r(646),o=r(607);const a="nr@context:".concat(o.W),c=function e(t,r){var n={},o={},d={},l=!1;try{l=16===r.length&&u.initializedAgents?.[r]?.runtime.isolatedBacklog}catch(e){}var f={on:p,addEventListener:p,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,s){!1!==s&&(s=!0);if(c.aborted&&!i)return;t&&s&&t.emit(e,r,n);var a=g(n);m(e).forEach(e=>{e.apply(a,r)});var u=v()[o[e]];u&&u.push([f,e,r,a]);return a},get:h,listeners:m,context:g,buffer:function(e,t){const r=v();if(t=t||"feature",f.aborted)return;Object.entries(e||{}).forEach(([e,n])=>{o[n]=t,t in r||(r[t]=[])})},abort:function(){f._aborted=!0,Object.keys(f.backlog).forEach(e=>{delete f.backlog[e]})},isBuffering:function(e){return!!v()[o[e]]},debugId:r,backlog:l?{}:t&&"object"==typeof t.backlog?t.backlog:{},isolatedBacklog:l};return Object.defineProperty(f,"aborted",{get:()=>{let e=f._aborted||!1;return e||(t&&(e=t.aborted),e)}}),f;function g(e){return e&&e instanceof s.y?e:e?(0,i.I)(e,a,()=>new s.y(a)):new s.y(a)}function p(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function h(t){return d[t]=d[t]||e(f,t)}function v(){return f.backlog}}(void 0,"globalEE"),u=(0,n.Zm)();u.ee||(u.ee=c)},843:(e,t,r)=>{"use strict";r.d(t,{G:()=>s,u:()=>i});var n=r(878);function i(e,t=!1,r,i){(0,n.DD)("visibilitychange",function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)},r,i)}function s(e,t,r){(0,n.sp)("pagehide",e,t,r)}},860:(e,t,r)=>{"use strict";r.d(t,{$J:()=>d,K7:()=>c,P3:()=>u,XX:()=>i,Yy:()=>a,df:()=>s,qY:()=>n,v4:()=>o});const n="events",i="jserrors",s="browser/blobs",o="rum",a="browser/logs",c={ajax:"ajax",genericEvents:"generic_events",jserrors:i,logging:"logging",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",softNav:"soft_navigations"},u={[c.pageViewEvent]:1,[c.pageViewTiming]:2,[c.metrics]:3,[c.jserrors]:4,[c.softNav]:5,[c.ajax]:6,[c.sessionTrace]:7,[c.sessionReplay]:8,[c.logging]:9,[c.genericEvents]:10},d={[c.pageViewEvent]:o,[c.pageViewTiming]:n,[c.ajax]:n,[c.softNav]:n,[c.metrics]:i,[c.jserrors]:i,[c.sessionTrace]:s,[c.sessionReplay]:s,[c.logging]:a,[c.genericEvents]:"ins"}},863:(e,t,r)=>{"use strict";function n(){return Math.floor(performance.now())}r.d(t,{t:()=>n})},878:(e,t,r)=>{"use strict";function n(e,t){return{capture:e,passive:!1,signal:t}}function i(e,t,r=!1,i){window.addEventListener(e,t,n(r,i))}function s(e,t,r=!1,i){document.addEventListener(e,t,n(r,i))}r.d(t,{DD:()=>s,jT:()=>n,sp:()=>i})},908:(e,t,r)=>{"use strict";r.d(t,{d:()=>n,p:()=>i});var n=r(836).ee.get("handle");function i(e,t,r,i,s){s?(s.buffer([e],i),s.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},910:(e,t,r)=>{"use strict";r.d(t,{i:()=>s});var n=r(944);const i=new Map;function s(...e){return e.every(e=>{if(i.has(e))return i.get(e);const t="function"==typeof e?e.toString():"",r=t.includes("[native code]"),s=t.includes("nrWrapper");return r||s||(0,n.R)(64,e?.name||t),i.set(e,r),r})}},944:(e,t,r)=>{"use strict";r.d(t,{R:()=>i});var n=r(241);function i(e,t){"function"==typeof console.debug&&(console.debug("New Relic Warning: https://github.com/newrelic/newrelic-browser-agent/blob/main/docs/warning-codes.md#".concat(e),t),(0,n.W)({drained:null,type:"data",name:"warn",feature:"warn",data:{code:e,secondary:t}}))}},969:(e,t,r)=>{"use strict";r.d(t,{TZ:()=>n,XG:()=>a,rs:()=>i,xV:()=>o,z_:()=>s});const n=r(860).K7.metrics,i="sm",s="cm",o="storeSupportabilityMetrics",a="storeEventMetrics"},990:(e,t,r)=>{"use strict";r.d(t,{I:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var s=n[e]={exports:{}};return r[e](s,s.exports,i),s.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce((t,r)=>(i.f[r](e,t),t),[])),i.u=e=>"nr-rum-1.316.0.min.js",i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.316.0.PROD:",i.l=(r,n,s,o)=>{if(e[r])e[r].push(n);else{var a,c;if(void 0!==s)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+s){a=l;break}}if(!a){c=!0;var f={296:"sha512-jIy711COcvYTdufY9XXNNQaPvXp9CzLzgyI7kxmbI9RLMR0SBawMfv3DLsTJ4+RwkGrvP36bKNVeHloWZxeEKQ=="};(a=document.createElement("script")).charset="utf-8",i.nc&&a.setAttribute("nonce",i.nc),a.setAttribute("data-webpack",t+s),a.src=r,0!==a.src.indexOf(window.location.origin+"/")&&(a.crossOrigin="anonymous"),f[o]&&(a.integrity=f[o])}e[r]=[n];var g=(t,n)=>{a.onerror=a.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],a.parentNode&&a.parentNode.removeChild(a),i&&i.forEach(e=>e(n)),t)return t(n)},p=setTimeout(g.bind(null,void 0,{type:"timeout",target:a}),12e4);a.onerror=g.bind(null,a.onerror),a.onload=g.bind(null,a.onload),c&&document.head.appendChild(a)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={374:0,840:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var s=new Promise((r,i)=>n=e[t]=[r,i]);r.push(n[2]=s);var o=i.p+i.u(t),a=new Error;i.l(o,r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var s=r&&("load"===r.type?"missing":r.type),o=r&&r.target&&r.target.src;a.message="Loading chunk "+t+" failed: ("+s+": "+o+")",a.name="ChunkLoadError",a.type=s,a.request=o,n[1](a)}},"chunk-"+t,t)}};var t=(t,r)=>{var n,s,[o,a,c]=r,u=0;if(o.some(t=>0!==e[t])){for(n in a)i.o(a,n)&&(i.m[n]=a[n]);if(c)c(i)}for(t&&t(r);u<o.length;u++)s=o[u],i.o(e,s)&&e[s]&&e[s][0](),e[s]=0},r=self["webpackChunk:NRBA-1.316.0.PROD"]=self["webpackChunk:NRBA-1.316.0.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(374);var e=i(362),t=i(860);const r=Object.values(t.K7);var n=i(384),s=i(741);var o=i(555);t.K7.genericEvents;const a="experimental.resources",c="register",u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=i(614),l=i(944),f=i(122);const g="[data-nr-mask]",p=e=>(0,f.a)(e,(()=>{const e={feature_flags:[],experimental:{register:!1,resources:!1},mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{ajax:{deny_list:void 0,block_internal:!0,enabled:!0,autoStart:!0},api:{register:{get enabled(){return e.feature_flags.includes(c)||e.experimental.register},set enabled(t){e.experimental.register=t},duplicate_data_to_container:!1}},browser_consent_mode:{enabled:!1},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},get feature_flags(){return e.feature_flags},set feature_flags(t){e.feature_flags=t},generic_events:{enabled:!0,autoStart:!0},harvest:{interval:30},jserrors:{enabled:!0,autoStart:!0},logging:{enabled:!0,autoStart:!0},metrics:{enabled:!0,autoStart:!0},obfuscate:void 0,page_action:{enabled:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,autoStart:!0},performance:{capture_marks:!1,capture_measures:!1,capture_detail:!0,resources:{get enabled(){return e.feature_flags.includes(a)||e.experimental.resources},set enabled(t){e.experimental.resources=t},asset_types:[],first_party_domains:[],ignore_newrelic:!0}},privacy:{cookies_enabled:!0},proxy:{assets:void 0,beacon:void 0},session:{expiresMs:d.wk,inactiveMs:d.BB},session_replay:{autoStart:!0,enabled:!1,preload:!1,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,fix_stylesheets:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(g):""===t||null===t?e.mask_selector=g:(0,l.R)(5,t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.R)(6,t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.R)(7,t)}},session_trace:{enabled:!0,autoStart:!0},soft_navigations:{enabled:!0,autoStart:!0},ssl:void 0,user_actions:{enabled:!0,elementAttributes:["id","className","tagName","type"]}}})());var m=i(154),h=i(324);let v=0;const b={buildEnv:h.F3,distMethod:h.Xs,version:h.xv,originTime:m.WN},y={consented:!1},_={activatedFeatures:void 0,appMetadata:{},configured:!1,get consented(){return this.session?.state?.consent||y.consented},set consented(e){y.consented=e},customTransaction:void 0,denyList:[],disabled:!1,drainRegistry:new Map,harvester:void 0,isolatedBacklog:!1,isRecording:!1,loaderType:void 0,maxBytes:3e4,obfuscator:void 0,onerror:void 0,ptid:void 0,releaseIds:{},session:void 0,timeKeeper:void 0,registeredEntities:[],jsAttributesMetadata:{bytes:0},get harvestCount(){return++v}};var w=i(836),x=i(241);const R={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0};function k(e,t={},r,a){let{init:c,info:u,loader_config:d,runtime:l={},exposed:g=!0}=t;if(!u){const e=(0,n.pV)();c=e.init,u=e.info,d=e.loader_config}var h;e.init=p(c||{}),e.loader_config=(h=d||{},(0,f.a)(h,R)),u.jsAttributes??={},m.bv&&(u.jsAttributes.isWorker=!0),e.info=(0,o.D)(u);const v=e.init;e.runtime??=(e=>{const t=(0,f.a)(e,_),r=Object.keys(b).reduce((e,t)=>(e[t]={value:b[t],writable:!1,configurable:!0,enumerable:!0},e),{});return Object.defineProperties(t,r)})(l),v.proxy.assets&&(e=>{const t=e.startsWith("http");e+="/",i.p=t?e:"https://"+e})(v.proxy.assets),e.runtime.configured||(Object.defineProperty(e,"beacons",{get:()=>[e.info.beacon,e.info.errorBeacon,e.init.proxy.assets,e.init.proxy.beacon].filter(Boolean)}),Object.defineProperty(e.runtime,"denyList",{get:()=>[...e.init.ajax.deny_list||[],...e.init.ajax.block_internal?e.beacons:[]]}),e.runtime.ptid=e.agentIdentifier,function(e){const t=(0,n.pV)();Object.getOwnPropertyNames(s.W.prototype).forEach(r=>{const n=s.W.prototype[r];if("function"!=typeof n||"constructor"===n)return;let i=t[r];e[r]&&!1!==e.exposed&&"micro-agent"!==e.runtime?.loaderType&&(t[r]=(...t)=>{const n=e[r](...t);return i?i(...t):n})})}(e),e.runtime.loaderType=r,e.ee=w.ee.get(e.agentIdentifier),e.exposed=g,(0,x.W)({drained:!!e.runtime.activatedFeatures,type:"lifecycle",name:"initialize",feature:void 0,data:e.config}),e.runtime.configured=!0)}var A=i(908),T=i(863),S=i(261),E=i(738);var j=i(687),P=i(234),N=i(289);const O=e=>m.RI&&!0===e?.privacy.cookies_enabled;function M(e){return!!(0,n.dV)().o.MO&&O(e)&&!0===e?.session_trace.enabled}var I=i(389),D=i(699);const W=new WeakSet;class B extends P.W{constructor(e,t){super(e,t),this.abortHandler=void 0,this.featAggregate=void 0,this.loadedSuccessfully=void 0,this.onAggregateImported=new Promise(e=>{this.loadedSuccessfully=e}),this.deferred=Promise.resolve(),!1===e.init[this.featureName].autoStart?this.deferred=new Promise((t,r)=>{this.ee.on("manual-start-all",(0,I.J)(()=>{(0,j.Ak)(e,this.featureName),t()}))}):(0,j.Ak)(e,t)}importAggregator(e,t,r={}){if(this.featAggregate)return;const n=async()=>{if(await this.deferred,this.#t(e),!(0,o.f)(e.info))return(0,l.R)(43),e.ee.abort(),void this.loadedSuccessfully(!1);let n;try{if(O(e.init)){const{setupAgentSession:t}=await i.e(296).then(i.bind(i,8));n=t(e)}}catch(e){(0,l.R)(20,e),this.ee.emit("internal-error",[e]),(0,A.p)(D.qh,[e],void 0,this.featureName,this.ee)}try{if(!this.#r(this.featureName,n,e.init))return(0,j.Ze)(this.agentRef,this.featureName),void this.loadedSuccessfully(!1);const{Aggregate:i}=await t();this.featAggregate=new i(e,r),e.runtime.harvester.initializedAggregates.push(this.featAggregate),this.loadedSuccessfully(!0)}catch(e){(0,l.R)(34,e),this.abortHandler?.(),(0,j.Ze)(this.agentRef,this.featureName,!0),this.loadedSuccessfully(!1),this.ee&&this.ee.abort()}};m.RI?(0,N.GG)(()=>n(),!0):n()}#r(e,r,n){if(this.blocked)return!1;switch(e){case t.K7.sessionReplay:return M(n)&&!!r;case t.K7.sessionTrace:return!!r;default:return!0}}#t(e){if(!W.has(e)&&(W.add(e),!(0,o.f)(e.info))){const t=(0,n.pV)();let r={...t.info?.jsAttributes};try{r={...r,...e.info?.jsAttributes}}catch(e){}k(e,{...t,info:{...t.info,jsAttributes:r},runtime:e.runtime},e.runtime.loaderType)}}}var V=i(630);class K extends B{static featureName=V.T;constructor(e){var t;super(e,V.T),this.setupInspectionEvents(),t=e,(0,E.Y)(S.Fw,function(e,r){"string"==typeof e&&("/"!==e.charAt(0)&&(e="/"+e),t.runtime.customTransaction=(r||"http://custom.transaction")+e,(0,A.p)(S.Pl+S.Fw,[(0,T.t)()],void 0,void 0,t.ee))},t),this.importAggregator(e,()=>i.e(296).then(i.bind(i,146)))}setupInspectionEvents(){const e=(e,t)=>{e&&(0,x.W)({timeStamp:e.timeStamp,loaded:"complete"===e.target.readyState,type:"window",name:t,data:e.target.location+""})};(0,N.sB)(t=>{e(t,"DOMContentLoaded")}),(0,N.GG)(t=>{e(t,"load")}),(0,N.Qr)(t=>{e(t,"navigate")}),this.ee.on(d.tS.UPDATE,(e,t)=>{(0,x.W)({type:"lifecycle",name:"session",data:t})})}}class C extends e.d{constructor(e){var t;(super(),m.gm)?(this.features={},(0,n.bQ)(this.agentIdentifier,this),this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(K),k(this,e,e.loaderType||"agent"),t=this,(0,E.Y)(S.cD,function(e,r,n=!1){if("string"==typeof e){if(["string","number","boolean"].includes(typeof r)||null===r)return(0,E.U)(t,e,r,S.cD,n);(0,l.R)(40,typeof r)}else(0,l.R)(39,typeof e)},t),function(e){(0,E.Y)(S.Dl,function(t,r=!1){if("string"!=typeof t&&null!==t)return void(0,l.R)(41,typeof t);const n=e.info.jsAttributes["enduser.id"];r&&null!=n&&n!==t?(0,A.p)(S.Pl+"setUserIdAndResetSession",[t],void 0,"session",e.ee):(0,E.U)(e,"enduser.id",t,S.Dl,!0)},e)}(this),function(e){(0,E.Y)(S.nb,function(t){if("string"==typeof t||null===t)return(0,E.U)(e,"application.version",t,S.nb,!1);(0,l.R)(42,typeof t)},e)}(this),function(e){(0,E.Y)(S.d3,function(){e.ee.emit("manual-start-all")},e)}(this),function(e){(0,E.Y)(S.Pv,function(t=!0){if("boolean"==typeof t){if((0,A.p)(S.Pl+S.Pv,[t],void 0,"session",e.ee),e.runtime.consented=t,t){const t=e.features.page_view_event;t.onAggregateImported.then(e=>{const r=t.featAggregate;e&&!r.sentRum&&r.sendRum()})}}else(0,l.R)(65,typeof t)},e)}(this),this.run()):(0,l.R)(21)}get config(){return{info:this.info,init:this.init,loader_config:this.loader_config,runtime:this.runtime}}get api(){return this}run(){try{const e=function(e){const t={};return r.forEach(r=>{t[r]=!!e[r]?.enabled}),t}(this.init),n=[...this.desiredFeatures];n.sort((e,r)=>t.P3[e.featureName]-t.P3[r.featureName]),n.forEach(r=>{if(!e[r.featureName]&&r.featureName!==t.K7.pageViewEvent)return;const n=function(e){switch(e){case t.K7.ajax:return[t.K7.jserrors];case t.K7.sessionTrace:return[t.K7.ajax,t.K7.pageViewEvent];case t.K7.sessionReplay:return[t.K7.sessionTrace];case t.K7.pageViewTiming:return[t.K7.pageViewEvent];default:return[]}}(r.featureName).filter(e=>!(e in this.features));n.length>0&&(0,l.R)(36,{targetFeature:r.featureName,missingDependencies:n}),this.features[r.featureName]=new r(this)})}catch(e){(0,l.R)(22,e);for(const e in this.features)this.features[e].abortHandler?.();const t=(0,n.Zm)();delete t.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator;return t.ee.get(this.agentIdentifier).abort(),!1}}}var F=i(843),U=i(782);class L extends B{static featureName=U.T;constructor(e){super(e,U.T),m.RI&&((0,F.u)(()=>(0,A.p)("docHidden",[(0,T.t)()],void 0,U.T,this.ee),!0),(0,F.G)(()=>(0,A.p)("winPagehide",[(0,T.t)()],void 0,U.T,this.ee)),this.importAggregator(e,()=>i.e(296).then(i.bind(i,117))))}}var G=i(969);class H extends B{static featureName=G.TZ;constructor(e){super(e,G.TZ),this.importAggregator(e,()=>i.e(296).then(i.bind(i,623)))}}new C({features:[K,L,H],loaderType:"lite"})})()})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha Jornada Vocacional — Graziela</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --brand-yellow: #ffe600;
+  --brand-blue: #434ce4;
+  --text-primary: #282834;
+  --text-secondary: #646587;
+  --text-disabled: #9c9ebf;
+  --text-accent: #434ce4;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4f5f9;
+  --border-primary: #d0d4e6;
+  --border-accent: #434ce4;
+  --positive-loud: #1f8923;
+  --positive-quiet: #defade;
+  --caution-loud: #d74009;
+  --caution-quiet: #ffedc7;
+  --negative-loud: #9e0015;
+  --info-loud: #434ce4;
+  --info-quiet: #e9f1ff;
+  --neutral-loud: #646587;
+  --neutral-quiet: #e7e9f3;
+  --gray-100: #f4f5f9;
+  --gray-200: #e7e9f3;
+  --gray-300: #d0d4e6;
+  --gray-700: #646587;
+  --gray-900: #282834;
+  --shadow-low: 0 2px 4px 0 rgba(40,40,52,0.1);
+  --r-12: 12px;
+  --r-20: 20px;
+  --r-full: 9999px;
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* Navbar */
+.navbar {
+  background: var(--brand-yellow);
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar img { height: 28px; }
+
+/* Layout */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--brand-blue) 0%, #6a5fdb 100%);
+  border-radius: var(--r-20);
+  padding: 48px 40px;
+  color: #fff;
+  margin-bottom: 32px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 200px; height: 200px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 50%;
+}
+.hero h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; line-height: 1.2; }
+.hero p { font-size: 1rem; opacity: 0.85; max-width: 600px; }
+
+/* Progress bar */
+.progress-section {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--r-20);
+  padding: 24px;
+  margin-bottom: 32px;
+}
+.progress-section h3 { font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--text-secondary); }
+.progress-bar-track {
+  background: var(--gray-200);
+  border-radius: var(--r-full);
+  height: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.progress-bar-fill {
+  height: 100%;
+  border-radius: var(--r-full);
+  background: linear-gradient(90deg, var(--brand-blue), #6a5fdb);
+  transition: width 0.5s ease;
+}
+.progress-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+.month-dots {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.month-dot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+.month-dot .dot {
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--gray-300);
+  background: #fff;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: transparent;
+}
+.month-dot .dot.completed {
+  background: var(--positive-loud);
+  border-color: var(--positive-loud);
+  color: #fff;
+}
+.month-dot span:last-child {
+  font-size: 11px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--r-20);
+  padding: 6px;
+}
+.tab {
+  padding: 10px 18px;
+  border-radius: 14px;
+  border: none;
+  background: transparent;
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.tab:hover { background: var(--gray-100); }
+.tab.active {
+  background: var(--brand-blue);
+  color: #fff;
+}
+.tab .badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.25);
+  padding: 1px 7px;
+  border-radius: var(--r-full);
+  font-size: 11px;
+  margin-left: 6px;
+}
+.tab:not(.active) .badge {
+  background: var(--gray-200);
+}
+.tab.locked {
+  color: var(--text-disabled);
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+.tab.locked:hover { background: transparent; }
+.tab.locked .badge { background: var(--gray-200); color: var(--text-disabled); }
+
+
+/* Encounter card */
+.encounter {
+  display: none;
+}
+.encounter.active { display: block; }
+
+.card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--r-20);
+  padding: 28px;
+  margin-bottom: 20px;
+}
+.card h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card h2 .icon {
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.card .subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+.card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px 0 12px;
+  color: var(--text-primary);
+}
+.card p, .card li {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+.card ul, .card ol {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+.card li { margin-bottom: 6px; }
+
+/* Mission box */
+.mission-box {
+  background: linear-gradient(135deg, var(--info-quiet), #f3eeff);
+  border: 1px solid rgba(67,76,228,0.15);
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 20px;
+}
+.mission-box .mission-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--brand-blue);
+}
+.mission-box p {
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* Interactive fields */
+textarea.field {
+  width: 100%;
+  min-height: 100px;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--r-12);
+  padding: 14px;
+  font-family: var(--font);
+  font-size: 14px;
+  resize: vertical;
+  transition: border-color 0.2s;
+  background: #fff;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin-top: 8px;
+}
+textarea.field:focus {
+  outline: none;
+  border-color: var(--brand-blue);
+  box-shadow: 0 0 0 3px rgba(67,76,228,0.1);
+}
+textarea.field::placeholder { color: var(--text-disabled); }
+
+input.field-input {
+  width: 100%;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--r-12);
+  padding: 10px 14px;
+  font-family: var(--font);
+  font-size: 14px;
+  background: #fff;
+  color: var(--text-primary);
+  transition: border-color 0.2s;
+}
+input.field-input:focus {
+  outline: none;
+  border-color: var(--brand-blue);
+  box-shadow: 0 0 0 3px rgba(67,76,228,0.1);
+}
+
+.field-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+  display: block;
+  margin-top: 14px;
+}
+
+/* Interactive table */
+.int-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 12px;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--r-12);
+  overflow: hidden;
+}
+.int-table th {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 12px 14px;
+  text-align: left;
+  letter-spacing: 0.03em;
+}
+.int-table td {
+  padding: 4px;
+  border-top: 1px solid var(--border-primary);
+  vertical-align: top;
+}
+.int-table td input,
+.int-table td textarea {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  font-family: var(--font);
+  font-size: 13px;
+  background: transparent;
+  color: var(--text-primary);
+  resize: vertical;
+}
+.int-table td input:focus,
+.int-table td textarea:focus {
+  outline: none;
+  background: var(--info-quiet);
+}
+.int-table td textarea { min-height: 60px; }
+
+/* Checklist */
+.checklist { list-style: none; padding: 0; }
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+.checklist li:last-child { border: none; }
+.checklist input[type="checkbox"] {
+  width: 20px; height: 20px;
+  accent-color: var(--brand-blue);
+  flex-shrink: 0;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+/* Compare table */
+.compare-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--r-12);
+  overflow: hidden;
+  font-size: 13px;
+  margin-top: 12px;
+}
+.compare-table th {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 12px 14px;
+  text-align: left;
+  letter-spacing: 0.03em;
+}
+.compare-table td {
+  padding: 10px 14px;
+  border-top: 1px solid var(--border-primary);
+  vertical-align: top;
+  line-height: 1.5;
+}
+.compare-table tr:hover td { background: var(--gray-100); }
+.compare-table td:first-child { font-weight: 600; color: var(--text-secondary); white-space: nowrap; }
+
+/* Pill tags */
+.pill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: var(--r-full);
+  font-size: 12px;
+  font-weight: 600;
+}
+.pill-green { background: var(--positive-quiet); color: var(--positive-loud); }
+.pill-orange { background: var(--caution-quiet); color: var(--caution-loud); }
+.pill-blue { background: var(--info-quiet); color: var(--info-loud); }
+.pill-gray { background: var(--neutral-quiet); color: var(--neutral-loud); }
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 28px;
+  margin-top: 16px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  background: var(--gray-300);
+}
+.timeline-item {
+  position: relative;
+  padding-bottom: 20px;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--brand-blue);
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px var(--brand-blue);
+}
+.timeline-item .tl-label {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--brand-blue);
+}
+.timeline-item .tl-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+/* Questions list */
+.question-list li {
+  font-style: italic;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Resources list */
+.resource-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+.resource-item:last-child { border: none; }
+.resource-icon {
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.resource-item .r-name { font-weight: 600; font-size: 14px; }
+.resource-item .r-desc { font-size: 12px; color: var(--text-secondary); }
+
+/* Dicas card */
+.tip-card {
+  background: var(--caution-quiet);
+  border: 1px solid rgba(215,64,9,0.12);
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-top: 16px;
+}
+.tip-card h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--caution-loud);
+  margin-bottom: 8px;
+}
+.tip-card p, .tip-card li {
+  font-size: 13px;
+  color: #5a3200;
+}
+
+/* Map builder */
+.path-builder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+@media (max-width: 640px) { .path-builder { grid-template-columns: 1fr; } }
+.path-col {
+  border: 2px dashed var(--border-primary);
+  border-radius: 16px;
+  padding: 20px;
+  transition: border-color 0.3s;
+}
+.path-col:focus-within { border-color: var(--brand-blue); }
+.path-col h4 {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--brand-blue);
+}
+
+/* Save button */
+.save-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid var(--border-primary);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  z-index: 100;
+}
+.btn {
+  padding: 10px 24px;
+  border-radius: var(--r-12);
+  border: none;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-primary {
+  background: var(--brand-blue);
+  color: #fff;
+}
+.btn-primary:hover { background: #3740c7; }
+.btn-secondary {
+  background: var(--gray-200);
+  color: var(--text-primary);
+}
+.btn-secondary:hover { background: var(--gray-300); }
+
+/* Saved toast */
+.toast {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--gray-900);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: var(--r-full);
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  z-index: 200;
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 32px 24px;
+  color: var(--text-disabled);
+  font-size: 12px;
+}
+.footer img { height: 20px; margin-bottom: 8px; opacity: 0.4; }
+
+/* Print */
+@media print {
+  .navbar, .save-bar, .tabs { display: none !important; }
+  .encounter { display: block !important; page-break-inside: avoid; }
+  .card { break-inside: avoid; }
+  body { background: #fff; }
+}
+</style>
+<script>(function(){function _ok(r,onOk){return r.json().then(function(b){if(!r.ok)throw b;onOk(b);return b;});}window.GRID=window.GRID||{};window.GRID.docId="01KPCA1MKP7KTBH06BFEQMPN9A";window.GRID._stateUpdatedAt='';window.GRID._stateUpdatedAtByName=window.GRID._stateUpdatedAtByName||{};window.GRID.states={get:function(name){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KPCA1MKP7KTBH06BFEQMPN9A"+'/states/'+encodeURIComponent(n)).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});},set:function(name,data,ifUpdatedAt){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KPCA1MKP7KTBH06BFEQMPN9A"+'/states/'+encodeURIComponent(n),{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({state:data,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAtByName[n]||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});},patch:function(name,patchData,ifUpdatedAt){var n=String(name||'').trim();if(!n)return Promise.reject({error:'validation_error',detail:'state name is required'});return fetch('/api/v1/documents/'+"01KPCA1MKP7KTBH06BFEQMPN9A"+'/states/'+encodeURIComponent(n),{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({patch:patchData,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAtByName[n]||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAtByName[n]=b.updated_at||'';});});}};window.GRID.state={get:function(){return fetch('/api/v1/documents/'+"01KPCA1MKP7KTBH06BFEQMPN9A"+'/state').then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});},set:function(data,ifUpdatedAt){return fetch('/api/v1/documents/'+"01KPCA1MKP7KTBH06BFEQMPN9A"+'/state',{method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({state:data,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAt||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});},patch:function(patchData,ifUpdatedAt){return fetch('/api/v1/documents/'+"01KPCA1MKP7KTBH06BFEQMPN9A"+'/state',{method:'PATCH',headers:{'Content-Type':'application/json'},body:JSON.stringify({patch:patchData,if_updated_at:(typeof ifUpdatedAt==='string'?ifUpdatedAt:(window.GRID._stateUpdatedAt||''))})}).then(function(r){return _ok(r,function(b){window.GRID._stateUpdatedAt=b.updated_at||'';});});}};}());</script></head>
+<body>
+
+<nav class="navbar">
+  
+</nav>
+
+<div class="container">
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Minha Jornada Vocacional</h1>
+    <p>Oi, Graziela! Este &eacute; o seu espa&ccedil;o para registrar descobertas, reflex&otilde;es e avan&ccedil;os ao longo dos 6 meses de mentoria (junho&ndash;outubro 2026). Tudo que voc&ecirc; escrever aqui fica salvo automaticamente.</p>
+  </div>
+
+  <!-- Progress -->
+  <div class="progress-section">
+    <h3>Progresso da mentoria</h3>
+    <div class="progress-bar-track">
+      <div class="progress-bar-fill" id="progressBar" style="width: 0%"></div>
+    </div>
+    <div class="progress-label" id="progressLabel">0 de 6 encontros conclu&iacute;dos</div>
+    <div class="month-dots">
+      <div class="month-dot" onclick="toggleMonth(0)"><div class="dot" id="dot0">&check;</div><span>Val</span></div>
+      <div class="month-dot" onclick="toggleMonth(1)"><div class="dot" id="dot1">&check;</div><span>Jun</span></div>
+      <div class="month-dot" onclick="toggleMonth(2)"><div class="dot" id="dot2">&check;</div><span>Jul</span></div>
+      <div class="month-dot" onclick="toggleMonth(3)"><div class="dot" id="dot3">&check;</div><span>Ago</span></div>
+      <div class="month-dot" onclick="toggleMonth(4)"><div class="dot" id="dot4">&check;</div><span>Set</span></div>
+      <div class="month-dot" onclick="toggleMonth(5)"><div class="dot" id="dot5">&check;</div><span>Out</span></div>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs" id="tabsContainer">
+    <button class="tab active" onclick="showTab(0)">Funda&ccedil;&atilde;o <span class="badge">Valores</span></button>
+    <button class="tab" onclick="showTab(1)">1. Jun <span class="badge">Caminhos</span></button>
+    <button class="tab" onclick="showTab(2)">2. Jul <span class="badge">&Aacute;reas</span></button>
+    <button class="tab" onclick="showTab(3)">3. Ago <span class="badge">Mercado</span></button>
+    <button class="tab" onclick="showTab(4)">4. Set <span class="badge">Convic&ccedil;&atilde;o</span></button>
+    <button class="tab" onclick="showTab(5)">5. Out <span class="badge">Largada</span></button>
+  </div>
+
+  <!-- ============ FUNDAÇÃO - VALORES ============ -->
+  <div class="encounter active" id="enc0">
+    <div class="card">
+      <h2><span class="icon" style="background:#f3eeff;color:#6a5fdb;">&#10024;</span> Fundação &mdash; Valores &amp; Prop&oacute;sito</h2>
+      <div class="subtitle">Por dentro de quem voc&ecirc; &eacute; &bull; Valores, prop&oacute;sito e resili&ecirc;ncia no Direito brasileiro</div>
+
+      <!-- PARTE 1 -->
+      <h3>Parte 1 &mdash; Seus valores</h3>
+      <p style="color:var(--text-secondary);font-size:13px;margin-bottom:16px;">Valores s&atilde;o princ&iacute;pios que guiam suas decis&otilde;es mesmo quando &eacute; dif&iacute;cil. Eles explicam por que certas injusti&ccedil;as te incomodam mais que outras &mdash; e por que voc&ecirc; escolheria um caminho mesmo sabendo que ser&aacute; desafiador.</p>
+
+      <p style="font-weight:600;font-size:14px;margin-bottom:12px;">Selecione at&eacute; 5 valores que mais ressoam com voc&ecirc;:</p>
+      <div id="valueGrid" style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px;">
+      </div>
+      <p id="valueCount" style="font-size:12px;color:var(--text-secondary);margin-bottom:16px;">0 de 5 selecionados</p>
+
+      <label class="field-label">Para cada valor que escolheu, escreva uma frase: por que ele importa pra voc&ecirc;?</label>
+      <textarea class="field" data-key="val_explicacao" placeholder="Ex: Justi&ccedil;a — porque cresci vendo pessoas sendo tratadas de forma diferente e sempre soube que isso estava errado..." style="min-height:140px;"></textarea>
+
+      <label class="field-label" style="margin-top:20px;">O que seria inegoci&aacute;vel para voc&ecirc; na vida profissional? (2 ou 3 coisas que voc&ecirc; jamais abriria m&atilde;o)</label>
+      <textarea class="field" data-key="val_inegociavel" placeholder="Ex: N&atilde;o trabalhar para quem claramente &eacute; culpado... ter autonomia para escolher meus casos... sentir que estou do lado certo..." style="min-height:100px;"></textarea>
+    </div>
+
+    <!-- PARTE 2 -->
+    <div class="card">
+      <h3 style="margin-top:0;">Parte 2 &mdash; A realidade do Direito no Brasil</h3>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:16px 0 20px;">
+        <div style="background:var(--caution-quiet);border-radius:16px;padding:18px;text-align:center;">
+          <div style="font-size:26px;font-weight:700;color:var(--caution-loud);">78M</div>
+          <div style="font-size:12px;color:var(--text-secondary);font-weight:600;">processos em tramita&ccedil;&atilde;o no Brasil (2024)</div>
+        </div>
+        <div style="background:var(--caution-quiet);border-radius:16px;padding:18px;text-align:center;">
+          <div style="font-size:26px;font-weight:700;color:var(--caution-loud);">~95%</div>
+          <div style="font-size:12px;color:var(--text-secondary);font-weight:600;">taxa de impunidade em crimes violentos</div>
+        </div>
+        <div style="background:var(--caution-quiet);border-radius:16px;padding:18px;text-align:center;">
+          <div style="font-size:26px;font-weight:700;color:var(--caution-loud);">8%</div>
+          <div style="font-size:12px;color:var(--text-secondary);font-weight:600;">dos homic&iacute;dios resultam em condena&ccedil;&atilde;o</div>
+        </div>
+        <div style="background:var(--caution-quiet);border-radius:16px;padding:18px;text-align:center;">
+          <div style="font-size:26px;font-weight:700;color:var(--caution-loud);">5&ndash;12 anos</div>
+          <div style="font-size:12px;color:var(--text-secondary);font-weight:600;">dura&ccedil;&atilde;o m&eacute;dia de um processo judicial</div>
+        </div>
+      </div>
+
+      <div class="tip-card">
+        <h4>&#128161; Por que isso importa</h4>
+        <p>Advogados que constroem carreiras longas e significativas no Brasil n&atilde;o ignoram essa realidade &mdash; eles escolheram o Direito <em>apesar</em> dela, ou <em>por causa</em> dela. Entender sua rela&ccedil;&atilde;o com essa frustra&ccedil;&atilde;o agora &eacute; mais valioso do que qualquer nota na faculdade.</p>
+      </div>
+
+      <label class="field-label" style="margin-top:20px;">Como voc&ecirc; se sente ao ler esses dados? Seja honesta &mdash; raiva, desespero, motiva&ccedil;&atilde;o, tudo &eacute; v&aacute;lido.</label>
+      <textarea class="field" data-key="val_reacao_dados" placeholder="Quando leio isso, sinto..." style="min-height:120px;"></textarea>
+    </div>
+
+    <!-- PARTE 3 -->
+    <div class="card">
+      <h3 style="margin-top:0;">Parte 3 &mdash; Seu momento de injusti&ccedil;a</h3>
+      <p style="color:var(--text-secondary);font-size:13px;margin-bottom:16px;">Escreva sobre um momento em que sentiu que algo foi profundamente injusto &mdash; pode ser algo que aconteceu com voc&ecirc;, com algu&eacute;m que ama, ou algo que testemunhou. N&atilde;o precisa ser relacionado ao Direito.</p>
+
+      <label class="field-label">O que aconteceu? O que sentiu? Como reagiu?</label>
+      <textarea class="field" data-key="val_injustica" placeholder="Lembro de quando..." style="min-height:180px;"></textarea>
+
+      <label class="field-label" style="margin-top:16px;">O que esse epis&oacute;dio revela sobre o que voc&ecirc; defende? O que ele diz sobre quem voc&ecirc; &eacute;?</label>
+      <textarea class="field" data-key="val_injustica_reflexao" placeholder="Acho que esse momento me mostrou que eu..." style="min-height:100px;"></textarea>
+    </div>
+
+    <!-- PARTE 4 -->
+    <div class="card">
+      <h3 style="margin-top:0;">Parte 4 &mdash; O teste de convic&ccedil;&atilde;o</h3>
+
+      <div style="background:linear-gradient(135deg,#2d1b69,#434ce4);border-radius:16px;padding:28px;color:#fff;margin-bottom:24px;">
+        <p style="font-size:15px;line-height:1.8;font-weight:500;">Se voc&ecirc; soubesse que durante toda a sua carreira &mdash; o sistema <strong>nunca seria perfeito</strong>, a impunidade continuaria existindo, voc&ecirc; perderia casos que deveriam ganhar, r&eacute;us culpados sairiam livres, e nem sempre a justi&ccedil;a prevaleceria &mdash;</p>
+        <p style="font-size:20px;font-weight:700;margin-top:16px;line-height:1.4;">ainda assim escolheria o Direito?<br>Por qu&ecirc;?</p>
+      </div>
+
+      <textarea class="field" data-key="val_teste_conviccao" placeholder="Sim / N&atilde;o / N&atilde;o sei &mdash; e aqui est&aacute; o que me faz responder assim..." style="min-height:200px;font-size:15px;line-height:1.8;"></textarea>
+    </div>
+
+    <!-- PARTE 5 -->
+    <div class="card">
+      <h3 style="margin-top:0;">Parte 5 &mdash; Seu porqu&ecirc;</h3>
+      <p style="color:var(--text-secondary);font-size:13px;margin-bottom:20px;">Complete as frases com suas pr&oacute;prias palavras. N&atilde;o existe resposta certa &mdash; existe a sua.</p>
+
+      <label class="field-label">&#127757; &ldquo;Eu me importo com Direito porque o mundo seria melhor se...&rdquo;</label>
+      <textarea class="field" data-key="val_porque_mundo" placeholder="...as pessoas mais vulneráveis tivessem voz igual..." style="min-height:100px;"></textarea>
+
+      <label class="field-label" style="margin-top:16px;">&#129309; &ldquo;O que eu quero que as pessoas sintam quando saem de uma conversa comigo como advogada &eacute;...&rdquo;</label>
+      <textarea class="field" data-key="val_quero_que_sintam" placeholder="...que foram ouvidas de verdade..." style="min-height:100px;"></textarea>
+
+      <label class="field-label" style="margin-top:16px;">&#128161; &ldquo;O que me sustentaria nos dias dif&iacute;ceis dentro do sistema &eacute;...&rdquo;</label>
+      <textarea class="field" data-key="val_sustento" placeholder="...saber que mesmo um caso resolvido muda a vida daquela pessoa..." style="min-height:100px;"></textarea>
+
+      <div class="mission-box" style="margin-top:24px;">
+        <div class="mission-header">&#127919; Antes do pr&oacute;ximo encontro</div>
+        <p>Releia o que voc&ecirc; escreveu aqui antes de abrir a aba <strong>Caminhos</strong>. Os valores que voc&ecirc; identificou ser&atilde;o o seu filtro para avaliar cada op&ccedil;&atilde;o de carreira.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ENCONTRO 1 - JUNHO ============ -->
+  <div class="encounter" id="enc1">
+    <div class="card">
+      <h2><span class="icon" style="background:var(--positive-quiet);color:var(--positive-loud);">&#128736;</span> Encontro 1 &mdash; Junho</h2>
+      <div class="subtitle">Concurso, OAB e caminhos poss&iacute;veis &bull; Planejamento de carreira p&oacute;s-formatura</div>
+
+      <h3>Tr&ecirc;s caminhos em detalhe</h3>
+
+      <!-- Defensoria -->
+      <div style="border:1px solid var(--border-primary);border-radius:16px;padding:20px;margin-bottom:16px;">
+        <h4 style="font-size:16px;font-weight:700;color:var(--positive-loud);margin-bottom:12px;">&#9878;&#65039; Defensoria P&uacute;blica</h4>
+        <div style="overflow-x:auto;">
+        <table class="compare-table" style="margin-top:0;">
+          <tbody>
+            <tr><td>O que faz</td><td>Representa judicialmente pessoas que n&atilde;o podem pagar advogado &mdash; fam&iacute;lias de baixa renda, presos, v&iacute;timas de viol&ecirc;ncia</td></tr>
+            <tr><td>&Aacute;reas de atua&ccedil;&atilde;o</td><td>Fam&iacute;lia (guarda, pens&atilde;o), penal (defesa de r&eacute;us), consumidor, sa&uacute;de (medicamentos via SUS), habita&ccedil;&atilde;o</td></tr>
+            <tr><td>Como chegar</td><td>Faculdade (5 anos) &rarr; OAB &rarr; 2 anos de pr&aacute;tica &rarr; concurso p&uacute;blico</td></tr>
+            <tr><td>Remunera&ccedil;&atilde;o</td><td><strong>R$ 22.000&ndash;33.000</strong> (DPU paga mais)</td></tr>
+            <tr><td>Estabilidade</td><td><span class="pill pill-green">Alta &mdash; cargo vital&iacute;cio</span></td></tr>
+            <tr><td>Home office</td><td><span class="pill pill-orange">Parcial</span> &mdash; audi&ecirc;ncias presenciais, mas an&aacute;lise e peti&ccedil;&otilde;es podem ser remotas</td></tr>
+            <tr><td>Rotina t&iacute;pica</td><td>Atendimento ao p&uacute;blico, audi&ecirc;ncias, pe&ccedil;as, plant&otilde;es (penal), visitas a pres&iacute;dios</td></tr>
+            <tr><td>Prop&oacute;sito</td><td><span class="pill pill-green">Alt&iacute;ssimo</span> &mdash; voc&ecirc; &eacute; a voz de quem n&atilde;o tem voz</td></tr>
+            <tr><td>Desafios</td><td>Volume enorme de casos, carga emocional forte, estrutura prec&aacute;ria em alguns estados</td></tr>
+            <tr><td>Perfil ideal</td><td>Empatia forte, resist&ecirc;ncia emocional, vontade de ajudar diretamente pessoas vulner&aacute;veis</td></tr>
+            <tr><td>No RS</td><td>DPE-RS com sede em POA e unidades no interior. Sal&aacute;rio inicial ~R$ 28.000</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+      <!-- Direito Civil -->
+      <div style="border:1px solid var(--border-primary);border-radius:16px;padding:20px;margin-bottom:16px;">
+        <h4 style="font-size:16px;font-weight:700;color:var(--brand-blue);margin-bottom:12px;">&#9878;&#65039; Advocacia em Direito Civil</h4>
+        <div style="overflow-x:auto;">
+        <table class="compare-table" style="margin-top:0;">
+          <tbody>
+            <tr><td>O que faz</td><td>Atua em conflitos entre pessoas ou empresas: contratos, indeniza&ccedil;&otilde;es, heran&ccedil;a, propriedade, consumidor, responsabilidade civil</td></tr>
+            <tr><td>&Aacute;reas de atua&ccedil;&atilde;o</td><td>Contratos, fam&iacute;lia e sucess&otilde;es, imobili&aacute;rio, consumidor, danos morais/materiais, cobran&ccedil;as</td></tr>
+            <tr><td>Como chegar</td><td>Faculdade (5 anos) &rarr; OAB &rarr; in&iacute;cio imediato (escrit&oacute;rio pr&oacute;prio, associada, ou correspondente)</td></tr>
+            <tr><td>Remunera&ccedil;&atilde;o</td><td>J&uacute;nior: <strong>R$ 3.500&ndash;6.000</strong>; aut&ocirc;noma com carteira: depende do volume; pode crescer para R$ 10k&ndash;30k+ com o tempo</td></tr>
+            <tr><td>Estabilidade</td><td><span class="pill pill-orange">Baixa no in&iacute;cio</span> &mdash; depende de construir clientela e reputa&ccedil;&atilde;o</td></tr>
+            <tr><td>Home office</td><td><span class="pill pill-green">Alto</span> &mdash; consultivo quase 100% remoto; contencioso com audi&ecirc;ncias virtuais; peticionamento eletr&ocirc;nico</td></tr>
+            <tr><td>Rotina t&iacute;pica</td><td>Atender clientes, redigir contratos e peti&ccedil;&otilde;es, acompanhar processos, audi&ecirc;ncias, negociar acordos</td></tr>
+            <tr><td>Prop&oacute;sito</td><td><span class="pill pill-blue">M&eacute;dio a alto</span> &mdash; ajuda pessoas em momentos dif&iacute;ceis (div&oacute;rcio, golpe, heran&ccedil;a), contato mais pontual</td></tr>
+            <tr><td>Desafios</td><td>Mercado saturado, inadimpl&ecirc;ncia de clientes, renda inst&aacute;vel no in&iacute;cio, necessidade de captar clientes</td></tr>
+            <tr><td>Perfil ideal</td><td>Organiza&ccedil;&atilde;o, boa comunica&ccedil;&atilde;o, negocia&ccedil;&atilde;o, autonomia, perfil empreendedor</td></tr>
+            <tr><td>No RS</td><td>Grande mercado em POA e regi&atilde;o metropolitana. Interior tem menos concorr&ecirc;ncia e boa demanda em fam&iacute;lia, consumidor e imobili&aacute;rio</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+      <!-- Direito Ambiental -->
+      <div style="border:1px solid var(--border-primary);border-radius:16px;padding:20px;margin-bottom:16px;">
+        <h4 style="font-size:16px;font-weight:700;color:#1f8923;margin-bottom:12px;">&#127807; Advocacia em Direito Ambiental</h4>
+        <div style="overflow-x:auto;">
+        <table class="compare-table" style="margin-top:0;">
+          <tbody>
+            <tr><td>O que faz</td><td>Prote&ccedil;&atilde;o do meio ambiente, licenciamento, cr&eacute;ditos de carbono, compliance ESG, regulariza&ccedil;&atilde;o de propriedades rurais</td></tr>
+            <tr><td>&Aacute;reas de atua&ccedil;&atilde;o</td><td>Licenciamento ambiental, ESG corporativo, direito miner&aacute;rio, direito animal, regulariza&ccedil;&atilde;o fundi&aacute;ria, a&ccedil;&otilde;es civis p&uacute;blicas</td></tr>
+            <tr><td>Como chegar</td><td>Faculdade (5 anos) &rarr; OAB &rarr; p&oacute;s em Dir. Ambiental (recomendada) &rarr; escrit&oacute;rio, ONG, &oacute;rg&atilde;o p&uacute;blico ou consultoria</td></tr>
+            <tr><td>Remunera&ccedil;&atilde;o</td><td>Escrit&oacute;rio: <strong>R$ 4.000&ndash;8.000</strong>; &oacute;rg&atilde;o p&uacute;blico (IBAMA): R$ 8k&ndash;16k; consultoria ESG: R$ 15k&ndash;25k+ com experi&ecirc;ncia</td></tr>
+            <tr><td>Estabilidade</td><td><span class="pill pill-orange">Depende do caminho</span> &mdash; &oacute;rg&atilde;o p&uacute;blico via concurso = estabilidade; consultoria = vari&aacute;vel</td></tr>
+            <tr><td>Home office</td><td><span class="pill pill-orange">Parcial</span> &mdash; pareceres e consultoria ESG remotos, mas vistorias t&eacute;cnicas e audi&ecirc;ncias s&atilde;o presenciais</td></tr>
+            <tr><td>Rotina t&iacute;pica</td><td>An&aacute;lise de legisla&ccedil;&atilde;o, pareceres, EIA/RIMA, licenciamentos, auditorias ESG, negocia&ccedil;&atilde;o com &oacute;rg&atilde;os (IBAMA, FEPAM)</td></tr>
+            <tr><td>Prop&oacute;sito</td><td><span class="pill pill-green">Muito alto</span> &mdash; proteger rios, florestas, comunidades. Impacto direto no planeta e gera&ccedil;&otilde;es futuras</td></tr>
+            <tr><td>Desafios</td><td>Mercado de nicho (menos vagas), press&atilde;o econ&ocirc;mica vs. prote&ccedil;&atilde;o ambiental, conhecimento t&eacute;cnico interdisciplinar necess&aacute;rio</td></tr>
+            <tr><td>Perfil ideal</td><td>Preocupa&ccedil;&atilde;o com meio ambiente, gosta de legisla&ccedil;&atilde;o complexa, interesse em ESG, perfil investigativo, interdisciplinar</td></tr>
+            <tr><td>No RS</td><td>FEPAM (estadual), casos de minera&ccedil;&atilde;o e agroneg&oacute;cio. P&oacute;s-enchentes de 2024: aumento de demanda em recupera&ccedil;&atilde;o ambiental</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+
+      <!-- Direito Digital -->
+      <div style="border:1px solid var(--border-primary);border-radius:16px;padding:20px;margin-bottom:16px;">
+        <h4 style="font-size:16px;font-weight:700;color:#6a5fdb;margin-bottom:12px;">&#128187; Advocacia em Direito Digital</h4>
+        <div style="overflow-x:auto;">
+        <table class="compare-table" style="margin-top:0;">
+          <tbody>
+            <tr><td>O que faz</td><td>Prote&ccedil;&atilde;o de dados (LGPD), contratos digitais, propriedade intelectual online, crimes cibern&eacute;ticos, regulat&oacute;rio de IA e plataformas</td></tr>
+            <tr><td>&Aacute;reas de atua&ccedil;&atilde;o</td><td>LGPD e privacidade, e-commerce, crimes digitais, propriedade intelectual, contratos de software, compliance de IA, startups e fintechs</td></tr>
+            <tr><td>Como chegar</td><td>Faculdade (5 anos) &rarr; OAB &rarr; p&oacute;s em Direito Digital / LGPD (recomendada) &rarr; escrit&oacute;rio especializado, DPO in-house ou consultoria</td></tr>
+            <tr><td>Remunera&ccedil;&atilde;o</td><td>Junior: <strong>R$ 5.000&ndash;9.000</strong>; DPO in-house (empresa): R$ 12k&ndash;22k; consultoria s&ecirc;nior: R$ 20k&ndash;40k+</td></tr>
+            <tr><td>Estabilidade</td><td><span class="pill pill-blue">Crescente</span> &mdash; demanda explodindo com LGPD e regulat&oacute;rio de IA; mercado ainda pouco saturado</td></tr>
+            <tr><td>Home office</td><td><span class="pill pill-green">Muito alto</span> &mdash; trabalho quase 100% remoto; clientes no Brasil todo e no exterior</td></tr>
+            <tr><td>Rotina t&iacute;pica</td><td>Pareceres de adequa&ccedil;&atilde;o &agrave; LGPD, revis&atilde;o de pol&iacute;ticas de privacidade, contratos de SaaS, auditorias de dados, respostas a incidentes, tr&ecirc;inamentos internos</td></tr>
+            <tr><td>Prop&oacute;sito</td><td><span class="pill pill-blue">Alto</span> &mdash; protege direitos das pessoas no mundo digital; &aacute;rea em constante evolu&ccedil;&atilde;o com impacto real na sociedade</td></tr>
+            <tr><td>Desafios</td><td>Legisla&ccedil;&atilde;o muda r&aacute;pido (exige atualiza&ccedil;&atilde;o cont&iacute;nua), interdisciplinar (direito + tecnologia), clientes ainda educando sobre a import&acirc;ncia da &aacute;rea</td></tr>
+            <tr><td>Perfil ideal</td><td>Curiosidade por tecnologia, gosta de aprender r&aacute;pido, comunica&ccedil;&atilde;o clara, conforto com ambiguidade, interesse em IA e privacidade</td></tr>
+            <tr><td>No RS</td><td>Mercado concentrado em POA (startups, ag&ecirc;ncias, fintechs), mas atuac&atilde;o 100% remota permite clientes de SP, RJ e exterior</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+      <h3>Quadro comparativo resumido</h3>
+      <div style="overflow-x:auto;">
+      <table class="compare-table">
+        <thead><tr><th>Crit&eacute;rio</th><th>Defensoria P&uacute;blica</th><th>Direito Civil</th><th>Direito Ambiental</th><th>Direito Digital</th></tr></thead>
+        <tbody>
+          <tr><td>Ajuda pessoas?</td><td>Diretamente, as mais vulner&aacute;veis</td><td>Sim, quest&otilde;es do cotidiano</td><td>Comunidades e gera&ccedil;&otilde;es futuras</td><td>Protege direitos no mundo digital</td></tr>
+          <tr><td>Renda inicial</td><td><span class="pill pill-green">R$ 22k&ndash;33k</span></td><td><span class="pill pill-orange">R$ 3,5k&ndash;6k</span></td><td><span class="pill pill-blue">R$ 4k&ndash;8k</span></td><td><span class="pill pill-blue">R$ 5k&ndash;9k</span></td></tr>
+          <tr><td>Estabilidade</td><td><span class="pill pill-green">Alta (concurso)</span></td><td><span class="pill pill-orange">Baixa no in&iacute;cio</span></td><td><span class="pill pill-orange">Depende do caminho</span></td><td><span class="pill pill-blue">Crescente</span></td></tr>
+          <tr><td>Home office</td><td><span class="pill pill-orange">Parcial</span></td><td><span class="pill pill-green">Alto</span></td><td><span class="pill pill-orange">Parcial</span></td><td><span class="pill pill-green">Muito alto</span></td></tr>
+          <tr><td>Tempo at&eacute; atuar</td><td>~9&ndash;11 anos</td><td>~5&ndash;6 anos</td><td>~6&ndash;7 anos</td><td>~6&ndash;7 anos</td></tr>
+          <tr><td>Satura&ccedil;&atilde;o</td><td><span class="pill pill-green">Baixa</span></td><td><span class="pill pill-orange">Alta</span></td><td><span class="pill pill-green">Baixa (nicho)</span></td><td><span class="pill pill-green">Muito baixa</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h3>Linha do tempo realista</h3>
+      <div class="timeline">
+        <div class="timeline-item"><div class="tl-label">17 anos (hoje)</div><div class="tl-desc">Vestibular em outubro de 2026</div></div>
+        <div class="timeline-item"><div class="tl-label">18 anos &mdash; 2027</div><div class="tl-desc">In&iacute;cio da faculdade (5 anos)</div></div>
+        <div class="timeline-item"><div class="tl-label">21&ndash;22 anos</div><div class="tl-desc">Est&aacute;gio a partir do 4&ordm; ano</div></div>
+        <div class="timeline-item"><div class="tl-label">23 anos &mdash; 2031</div><div class="tl-desc">Formatura + Exame da OAB</div></div>
+        <div class="timeline-item"><div class="tl-label">23&ndash;27 anos</div><div class="tl-desc">Se advocacia: in&iacute;cio imediato. Se concurso: 2&ndash;4 anos de prepara&ccedil;&atilde;o</div></div>
+        <div class="timeline-item"><div class="tl-label">25&ndash;27 anos</div><div class="tl-desc">Carreira estabelecida &#127919;</div></div>
+      </div>
+
+      <h3>Tabela completa de concursos jur&iacute;dicos</h3>
+      <div style="overflow-x:auto;">
+      <table class="compare-table">
+        <thead><tr><th>Carreira</th><th>Requisitos</th><th>Remunera&ccedil;&atilde;o</th><th>Home office</th></tr></thead>
+        <tbody>
+          <tr><td>Defensor P&uacute;blico</td><td>OAB + 2 anos</td><td>R$ 22k&ndash;33k</td><td><span class="pill pill-orange">Parcial</span></td></tr>
+          <tr><td>Procurador do Estado</td><td>OAB + 3 anos</td><td>R$ 25k&ndash;35k</td><td><span class="pill pill-orange">Parcial</span></td></tr>
+          <tr><td>Procurador Federal</td><td>OAB</td><td>R$ 22k&ndash;27k</td><td><span class="pill pill-orange">Parcial</span></td></tr>
+          <tr><td>Juiz de Direito</td><td>OAB + 3 anos</td><td>R$ 33k&ndash;35k</td><td><span class="pill pill-gray">Baixo</span></td></tr>
+          <tr><td>Promotor de Justi&ccedil;a</td><td>OAB + 3 anos</td><td>R$ 33k&ndash;35k</td><td><span class="pill pill-gray">Baixo</span></td></tr>
+          <tr><td>Cart&oacute;rio</td><td>OAB + concurso</td><td>R$ 30k&ndash;200k+</td><td><span class="pill pill-gray">Baixo</span></td></tr>
+          <tr><td>Analista Judici&aacute;rio</td><td>Gradua&ccedil;&atilde;o</td><td>R$ 13k&ndash;16k</td><td><span class="pill pill-orange">Parcial</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <div class="mission-box">
+        <div class="mission-header">&#127919; Miss&atilde;o para Julho &mdash; Mapa da minha carreira</div>
+        <p>Monte 2 caminhos poss&iacute;veis para depois da formatura. Para cada um, descreva as etapas, o que ganha e o que perde.</p>
+
+        <div class="path-builder">
+          <div class="path-col">
+            <h4>Caminho A</h4>
+            <label class="field-label" style="color:var(--brand-blue);">Nome do caminho</label>
+            <input class="field-input" type="text" data-key="path_a_nome" placeholder="Ex: Advocacia aut&ocirc;noma (home office)">
+            <label class="field-label" style="color:var(--brand-blue);">Etapas</label>
+            <textarea class="field" data-key="path_a_etapas" placeholder="Faculdade &rarr; OAB &rarr; ..." style="min-height:80px;background:rgba(255,255,255,0.7);"></textarea>
+            <label class="field-label" style="color:var(--brand-blue);">O que ganho</label>
+            <textarea class="field" data-key="path_a_ganho" placeholder="Liberdade, flexibilidade..." style="min-height:60px;background:rgba(255,255,255,0.7);"></textarea>
+            <label class="field-label" style="color:var(--brand-blue);">O que perco / abro m&atilde;o</label>
+            <textarea class="field" data-key="path_a_perco" placeholder="Estabilidade, sal&aacute;rio fixo..." style="min-height:60px;background:rgba(255,255,255,0.7);"></textarea>
+          </div>
+          <div class="path-col">
+            <h4>Caminho B</h4>
+            <label class="field-label" style="color:var(--brand-blue);">Nome do caminho</label>
+            <input class="field-input" type="text" data-key="path_b_nome" placeholder="Ex: Concurso (Defensoria)">
+            <label class="field-label" style="color:var(--brand-blue);">Etapas</label>
+            <textarea class="field" data-key="path_b_etapas" placeholder="Faculdade &rarr; OAB &rarr; 2 anos pr&aacute;tica &rarr; ..." style="min-height:80px;background:rgba(255,255,255,0.7);"></textarea>
+            <label class="field-label" style="color:var(--brand-blue);">O que ganho</label>
+            <textarea class="field" data-key="path_b_ganho" placeholder="Estabilidade, prop&oacute;sito..." style="min-height:60px;background:rgba(255,255,255,0.7);"></textarea>
+            <label class="field-label" style="color:var(--brand-blue);">O que perco / abro m&atilde;o</label>
+            <textarea class="field" data-key="path_b_perco" placeholder="Tempo de prepara&ccedil;&atilde;o, flexibilidade..." style="min-height:60px;background:rgba(255,255,255,0.7);"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <h3>Minhas anota&ccedil;&otilde;es</h3>
+      <textarea class="field" data-key="enc1_minhas_notas" placeholder="O que eu aprendi nesse encontro... Qual caminho me atraiu mais..."></textarea>
+    </div>
+  </div>
+
+    <!-- ============ ENCONTRO 2 - JULHO ============ -->
+  <div class="encounter" id="enc2">
+    <div class="card">
+      <h2><span class="icon" style="background:var(--positive-quiet);color:var(--positive-loud);">&#128218;</span> Encontro 2 &mdash; Julho</h2>
+      <div class="subtitle">O Direito por dentro &bull; Realidade da gradua&ccedil;&atilde;o e &aacute;reas de atua&ccedil;&atilde;o</div>
+
+      <h3>Mapa das &aacute;reas do Direito</h3>
+      <div style="overflow-x:auto;">
+      <table class="compare-table">
+        <thead><tr><th>&Aacute;rea</th><th>O que faz</th><th>Perfil</th><th>Home office</th></tr></thead>
+        <tbody>
+          <tr><td>Civil</td><td>Contratos, fam&iacute;lia, heran&ccedil;a, consumidor</td><td>Media&ccedil;&atilde;o, resolver quest&otilde;es do dia a dia</td><td><span class="pill pill-orange">Parcial</span></td></tr>
+          <tr><td>Penal</td><td>Defesa ou acusa&ccedil;&atilde;o em crimes</td><td>Debates intensos, argumenta&ccedil;&atilde;o</td><td><span class="pill pill-gray">Baixo</span></td></tr>
+          <tr><td>Trabalhista</td><td>Rela&ccedil;&atilde;o empregado &times; empregador</td><td>Injusti&ccedil;a no trabalho</td><td><span class="pill pill-green">Alto</span></td></tr>
+          <tr><td>Tribut&aacute;rio</td><td>Impostos, planejamento fiscal</td><td>N&uacute;meros, organiza&ccedil;&atilde;o, detalhes</td><td><span class="pill pill-green">Alto</span></td></tr>
+          <tr><td>Digital / LGPD</td><td>Prote&ccedil;&atilde;o de dados, crimes digitais</td><td>Tecnologia, inova&ccedil;&atilde;o</td><td><span class="pill pill-green">Muito alto</span></td></tr>
+          <tr><td>Ambiental / ESG</td><td>Meio ambiente, sustentabilidade</td><td>Natureza, responsabilidade social</td><td><span class="pill pill-orange">Parcial</span></td></tr>
+          <tr><td>Previdenci&aacute;rio</td><td>Aposentadorias, benef&iacute;cios INSS</td><td>Ajudar pessoas com burocracia</td><td><span class="pill pill-green">Alto</span></td></tr>
+          <tr><td>Fam&iacute;lia</td><td>Div&oacute;rcio, guarda, ado&ccedil;&atilde;o</td><td>Empatia, escuta, acolhimento</td><td><span class="pill pill-orange">Parcial</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h3>O que esperar da faculdade</h3>
+      <ul>
+        <li><strong>Dura&ccedil;&atilde;o:</strong> 5 anos (10 semestres)</li>
+        <li><strong>Rotina:</strong> muita leitura (doutrinas, leis, jurisprud&ecirc;ncia), reda&ccedil;&atilde;o de pe&ccedil;as, semin&aacute;rios, debates</li>
+        <li><strong>Primeiras mat&eacute;rias:</strong> Introdu&ccedil;&atilde;o ao Direito, Filosofia, Sociologia Jur&iacute;dica, Constitucional, Civil</li>
+        <li><strong>Est&aacute;gio:</strong> a partir do 7&ordm; semestre</li>
+        <li><strong>TCC:</strong> monografia ou artigo cient&iacute;fico</li>
+      </ul>
+
+      <h3>Recursos sugeridos</h3>
+      <div class="resource-item"><div class="resource-icon" style="background:var(--negative-loud);color:#fff;">&#9654;</div><div><div class="r-name">Trilhante (YouTube)</div><div class="r-desc">Aulas gratuitas e objetivas sobre v&aacute;rias &aacute;reas do Direito</div></div></div>
+      <div class="resource-item"><div class="resource-icon" style="background:var(--brand-blue);color:#fff;">&#9654;</div><div><div class="r-name">Prof. Wander Garcia (YouTube)</div><div class="r-desc">Foco em carreira, OAB e concursos</div></div></div>
+      <div class="resource-item"><div class="resource-icon" style="background:var(--positive-loud);color:#fff;">&#127911;</div><div><div class="r-name">Caf&eacute; com Direito (Podcast)</div><div class="r-desc">Carreira e estudos jur&iacute;dicos</div></div></div>
+      <div class="resource-item"><div class="resource-icon" style="background:#d74009;color:#fff;">&#127911;</div><div><div class="r-name">Migalhas Podcast</div><div class="r-desc">Not&iacute;cias jur&iacute;dicas do dia a dia</div></div></div>
+      <div class="resource-item"><div class="resource-icon" style="background:var(--gray-700);color:#fff;">&#127911;</div><div><div class="r-name">Sem Precedentes &mdash; Jota</div><div class="r-desc">Decis&otilde;es do STF explicadas</div></div></div>
+
+      <div class="mission-box">
+        <div class="mission-header">&#127919; Miss&atilde;o para Agosto &mdash; Explorar as &aacute;reas</div>
+        <p>Assista a pelo menos 3 v&iacute;deos/podcasts de advogados de &aacute;reas diferentes e preencha a tabela:</p>
+        <table class="int-table">
+          <thead><tr><th>V&iacute;deo / Podcast</th><th>&Aacute;rea do Direito</th><th>O que me atraiu</th><th>O que me assustou</th></tr></thead>
+          <tbody>
+            <tr><td><input type="text" data-key="vid1_nome" placeholder="Nome do v&iacute;deo..."></td><td><input type="text" data-key="vid1_area" placeholder="&Aacute;rea..."></td><td><textarea data-key="vid1_bom" placeholder="O que gostei..."></textarea></td><td><textarea data-key="vid1_ruim" placeholder="O que me preocupou..."></textarea></td></tr>
+            <tr><td><input type="text" data-key="vid2_nome" placeholder="Nome do v&iacute;deo..."></td><td><input type="text" data-key="vid2_area" placeholder="&Aacute;rea..."></td><td><textarea data-key="vid2_bom" placeholder="O que gostei..."></textarea></td><td><textarea data-key="vid2_ruim" placeholder="O que me preocupou..."></textarea></td></tr>
+            <tr><td><input type="text" data-key="vid3_nome" placeholder="Nome do v&iacute;deo..."></td><td><input type="text" data-key="vid3_area" placeholder="&Aacute;rea..."></td><td><textarea data-key="vid3_bom" placeholder="O que gostei..."></textarea></td><td><textarea data-key="vid3_ruim" placeholder="O que me preocupou..."></textarea></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Minhas anota&ccedil;&otilde;es</h3>
+      <textarea class="field" data-key="enc2b_minhas_notas" placeholder="O que eu aprendi nesse encontro... O que me surpreendeu..."></textarea>
+    </div>
+  </div>
+
+    <!-- ============ ENCONTRO 3 - AGOSTO ============ -->
+  <div class="encounter" id="enc3">
+    <div class="card">
+      <h2><span class="icon" style="background:var(--caution-quiet);color:var(--caution-loud);">&#129302;</span> Encontro 3 &mdash; Agosto</h2>
+      <div class="subtitle">Direito no mundo real de 2026 &bull; Mercado de trabalho, IA e o novo cen&aacute;rio</div>
+
+      <h3>O mercado em n&uacute;meros</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:20px;">
+        <div style="background:var(--info-quiet);border-radius:16px;padding:20px;text-align:center;">
+          <div style="font-size:28px;font-weight:700;color:var(--brand-blue);">~1,4M</div>
+          <div style="font-size:12px;color:var(--text-secondary);font-weight:600;">Advogados no Brasil</div>
+        </div>
+        <div style="background:var(--caution-quiet);border-radius:16px;padding:20px;text-align:center;">
+          <div style="font-size:28px;font-weight:700;color:var(--caution-loud);">15&ndash;25%</div>
+          <div style="font-size:12px;color:var(--text-secondary);font-weight:600;">Aprova&ccedil;&atilde;o na OAB (1&ordf; fase)</div>
+        </div>
+        <div style="background:var(--positive-quiet);border-radius:16px;padding:20px;text-align:center;">
+          <div style="font-size:28px;font-weight:700;color:var(--positive-loud);">10&ndash;15%</div>
+          <div style="font-size:12px;color:var(--text-secondary);font-weight:600;">Aprovados nas duas fases</div>
+        </div>
+      </div>
+
+      <h3>IA na advocacia &mdash; o que muda e o que fica</h3>
+      <div style="overflow-x:auto;">
+      <table class="compare-table">
+        <thead><tr><th>O que a IA j&aacute; faz</th><th>O que a IA N&Atilde;O faz (humano)</th></tr></thead>
+        <tbody>
+          <tr><td>Pesquisa de jurisprud&ecirc;ncia em segundos</td><td>Ouvir o cliente com empatia</td></tr>
+          <tr><td>Reda&ccedil;&atilde;o de peti&ccedil;&otilde;es repetitivas</td><td>Estrat&eacute;gia processual criativa</td></tr>
+          <tr><td>An&aacute;lise de contratos (due diligence)</td><td>Negocia&ccedil;&atilde;o e media&ccedil;&atilde;o</td></tr>
+          <tr><td>C&aacute;lculos trabalhistas/previdenci&aacute;rios</td><td>Audi&ecirc;ncias e sustenta&ccedil;&atilde;o oral</td></tr>
+          <tr><td>Triagem e classifica&ccedil;&atilde;o de processos</td><td>Interpreta&ccedil;&atilde;o &eacute;tica de situa&ccedil;&otilde;es complexas</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h3>Ferramentas de IA usadas no Brasil</h3>
+      <p><strong>Jusbrasil</strong> (pesquisa com IA), <strong>Turivius</strong> (jurimetria), <strong>Looplex</strong> (automa&ccedil;&atilde;o de documentos), <strong>Astrea</strong> (gest&atilde;o de processos), <strong>Doc9</strong> (correspond&ecirc;ncia jur&iacute;dica)</p>
+
+      <div class="tip-card">
+        <h4>&#128161; Ponto importante</h4>
+        <p>A IA n&atilde;o vai acabar com a advocacia &mdash; vai acabar com o advogado que s&oacute; faz trabalho repetitivo. Quem souber usar a IA a favor vai ter vantagem enorme.</p>
+      </div>
+
+      <h3>Trabalho remoto no Direito</h3>
+      <ul>
+        <li><strong>Consultivo (contratos, tribut&aacute;rio, LGPD):</strong> alt&iacute;ssimo potencial remoto</li>
+        <li><strong>Contencioso:</strong> parcialmente remoto &mdash; audi&ecirc;ncias virtuais se consolidaram p&oacute;s-pandemia</li>
+        <li><strong>Peticionamento eletr&ocirc;nico:</strong> PJe, e-SAJ, PROJUDI &mdash; tudo online</li>
+        <li><strong>Advocacia correspondente:</strong> Doc9, Jur&iacute;dico Certo para dilig&ecirc;ncias presenciais</li>
+      </ul>
+
+      <div class="mission-box">
+        <div class="mission-header">&#127919; Miss&atilde;o para Setembro &mdash; Entrevistar 2 profissionais</div>
+        <p>Converse com 2 pessoas que trabalham com Direito (perfis diferentes). Use o roteiro:</p>
+        <ol style="margin-top:8px;">
+          <li>Como &eacute; um dia t&iacute;pico seu de trabalho?</li>
+          <li>Voc&ecirc; trabalha presencial, h&iacute;brido ou remoto?</li>
+          <li>Indicaria a carreira de Direito para algu&eacute;m de 17 anos hoje?</li>
+          <li>O que a IA mudou na sua rotina?</li>
+          <li>Qual &aacute;rea tem mais futuro?</li>
+          <li>Se pudesse voltar no tempo, faria algo diferente na faculdade?</li>
+        </ol>
+
+        <h4 style="margin-top:20px;font-size:14px;font-weight:700;color:var(--brand-blue);">Entrevista 1</h4>
+        <label class="field-label" style="color:var(--brand-blue);">Nome e &aacute;rea de atua&ccedil;&atilde;o</label>
+        <input class="field-input" type="text" data-key="ent1_nome" placeholder="Ex: Dr. Marcos &mdash; Direito Trabalhista">
+        <label class="field-label" style="color:var(--brand-blue);">Principais respostas e insights</label>
+        <textarea class="field" data-key="ent1_respostas" placeholder="O que essa pessoa disse que mais chamou aten&ccedil;&atilde;o..." style="background:rgba(255,255,255,0.7);"></textarea>
+
+        <h4 style="margin-top:20px;font-size:14px;font-weight:700;color:var(--brand-blue);">Entrevista 2</h4>
+        <label class="field-label" style="color:var(--brand-blue);">Nome e &aacute;rea de atua&ccedil;&atilde;o</label>
+        <input class="field-input" type="text" data-key="ent2_nome" placeholder="Ex: Dra. Ana &mdash; Direito Digital">
+        <label class="field-label" style="color:var(--brand-blue);">Principais respostas e insights</label>
+        <textarea class="field" data-key="ent2_respostas" placeholder="O que essa pessoa disse que mais chamou aten&ccedil;&atilde;o..." style="background:rgba(255,255,255,0.7);"></textarea>
+      </div>
+
+      <h3>Minhas anota&ccedil;&otilde;es</h3>
+      <textarea class="field" data-key="enc3b_minhas_notas" placeholder="O que eu aprendi nesse encontro... O que me surpreendeu..."></textarea>
+    </div>
+  </div>
+
+    <!-- ============ ENCONTRO 4 - SETEMBRO ============ -->
+  <div class="encounter" id="enc4">
+    <div class="card">
+      <h2><span class="icon" style="background:#ffedc7;color:#d74009;">&#128293;</span> Encontro 4 &mdash; Setembro</h2>
+      <div class="subtitle">Teste de convic&ccedil;&atilde;o &bull; Confronto entre expectativa e realidade</div>
+
+      <h3>Relendo a carta do primeiro encontro</h3>
+      <p>Releia a carta que voc&ecirc; escreveu no primeiro m&ecirc;s. O que mudou na sua vis&atilde;o desde ent&atilde;o?</p>
+      <label class="field-label">O que mudou entre o primeiro encontro e agora?</label>
+      <textarea class="field" data-key="reflexao_carta" placeholder="O que eu pensava antes... O que penso agora..."></textarea>
+
+      <h3>Exerc&iacute;cio &ldquo;E se n&atilde;o fosse Direito?&rdquo;</h3>
+      <p>Pense em outras profiss&otilde;es que tamb&eacute;m te atraem. N&atilde;o &eacute; para gerar d&uacute;vida &mdash; &eacute; para <strong>confirmar</strong> sua escolha:</p>
+      <table class="int-table">
+        <thead><tr><th>Profiss&atilde;o alternativa</th><th>Por que tamb&eacute;m me atrai</th><th>O que o Direito tem que essa n&atilde;o tem</th></tr></thead>
+        <tbody>
+          <tr><td><input type="text" data-key="alt1_prof" placeholder="Ex: Psicologia"></td><td><textarea data-key="alt1_porque" placeholder="Tamb&eacute;m ajuda pessoas..."></textarea></td><td><textarea data-key="alt1_direito" placeholder="O Direito tem..."></textarea></td></tr>
+          <tr><td><input type="text" data-key="alt2_prof" placeholder="Ex: Servi&ccedil;o Social"></td><td><textarea data-key="alt2_porque" placeholder="Impacto social..."></textarea></td><td><textarea data-key="alt2_direito" placeholder="O Direito tem..."></textarea></td></tr>
+          <tr><td><input type="text" data-key="alt3_prof" placeholder="Ex: Jornalismo"></td><td><textarea data-key="alt3_porque" placeholder="Comunica&ccedil;&atilde;o..."></textarea></td><td><textarea data-key="alt3_direito" placeholder="O Direito tem..."></textarea></td></tr>
+        </tbody>
+      </table>
+
+      <h3>Meus medos e inseguran&ccedil;as</h3>
+      <label class="field-label">Escreva aqui o que te preocupa sobre o vestibular, a faculdade ou a carreira. Colocar no papel ajuda a organizar.</label>
+      <textarea class="field" data-key="enc4_meus_medos" placeholder="O que me preocupa... O que me d&aacute; medo... O que me deixa insegura..."></textarea>
+
+      <div class="mission-box">
+        <div class="mission-header">&#127919; Miss&atilde;o para Outubro &mdash; Declara&ccedil;&atilde;o de escolha</div>
+        <p>Escreva um par&aacute;grafo de 5 linhas completando:</p>
+        <p style="font-weight:700;font-size:16px;margin:12px 0;color:var(--brand-blue);">&ldquo;Eu escolho cursar Direito porque...&rdquo;</p>
+        <p>Use suas pr&oacute;prias palavras, sem clich&ecirc;s. Inclua pelo menos uma coisa que descobriu nos &uacute;ltimos meses. Se travar, tudo bem &mdash; essa dificuldade tamb&eacute;m &eacute; informa&ccedil;&atilde;o.</p>
+        <textarea class="field" data-key="declaracao" placeholder="Eu escolho cursar Direito porque..." style="min-height:160px;background:rgba(255,255,255,0.7);font-size:16px;line-height:1.8;"></textarea>
+      </div>
+    </div>
+  </div>
+
+    <!-- ============ ENCONTRO 5 - OUTUBRO ============ -->
+  <div class="encounter" id="enc5">
+    <div class="card">
+      <h2><span class="icon" style="background:var(--brand-yellow);color:var(--gray-900);">&#127919;</span> Encontro 5 &mdash; Outubro</h2>
+      <div class="subtitle">Largada &bull; Valida&ccedil;&atilde;o da decis&atilde;o + prepara&ccedil;&atilde;o emocional para o vestibular</div>
+
+      <h3>Faculdades no RS para considerar</h3>
+      <div style="overflow-x:auto;">
+      <table class="compare-table">
+        <thead><tr><th>Institui&ccedil;&atilde;o</th><th>Tipo</th><th>Destaque</th></tr></thead>
+        <tbody>
+          <tr><td>UFRGS</td><td><span class="pill pill-green">P&uacute;blica</span></td><td>Melhor do RS, entre as melhores do Brasil</td></tr>
+          <tr><td>UFSM</td><td><span class="pill pill-green">P&uacute;blica</span></td><td>Boa avalia&ccedil;&atilde;o, interior do estado</td></tr>
+          <tr><td>UFPel</td><td><span class="pill pill-green">P&uacute;blica</span></td><td>Boa op&ccedil;&atilde;o no sul do estado</td></tr>
+          <tr><td>FURG</td><td><span class="pill pill-green">P&uacute;blica</span></td><td>Em crescimento</td></tr>
+          <tr><td>PUCRS</td><td><span class="pill pill-blue">Particular</span></td><td>Tradi&ccedil;&atilde;o forte, Selo OAB Recomenda</td></tr>
+          <tr><td>Unisinos</td><td><span class="pill pill-blue">Particular</span></td><td>P&oacute;s-gradua&ccedil;&atilde;o excelente, pesquisa forte</td></tr>
+          <tr><td>UCS</td><td><span class="pill pill-blue">Particular</span></td><td>Refer&ecirc;ncia na Serra Ga&uacute;cha</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h3>Sugest&otilde;es de leitura (presente de despedida)</h3>
+      <div class="resource-item"><div class="resource-icon" style="background:var(--info-quiet);color:var(--brand-blue);">&#128214;</div><div><div class="r-name">O Caso dos Denunciantes Invejosos &mdash; Lon Fuller</div><div class="r-desc">Introdu&ccedil;&atilde;o ao racioc&iacute;nio jur&iacute;dico, curto e provocativo</div></div></div>
+      <div class="resource-item"><div class="resource-icon" style="background:var(--info-quiet);color:var(--brand-blue);">&#128214;</div><div><div class="r-name">Justi&ccedil;a: O que &eacute; fazer a coisa certa &mdash; Michael Sandel</div><div class="r-desc">Filosofia moral aplicada ao Direito, linguagem acess&iacute;vel</div></div></div>
+      <div class="resource-item"><div class="resource-icon" style="background:var(--info-quiet);color:var(--brand-blue);">&#128214;</div><div><div class="r-name">O Ponto de Inflex&atilde;o &mdash; Malcolm Gladwell</div><div class="r-desc">Ensina a pensar sobre padr&otilde;es e decis&otilde;es</div></div></div>
+
+      <h3>Minhas reflex&otilde;es finais</h3>
+      <label class="field-label">Como voc&ecirc; est&aacute; se sentindo depois desses 6 meses? O que aprendeu sobre voc&ecirc; mesma?</label>
+      <textarea class="field" data-key="enc5_reflexao_final" placeholder="O que eu sinto agora... O que mudou em mim..." style="min-height:160px;"></textarea>
+    </div>
+  </div>
+
+
+
+
+</div>
+
+<!-- Save bar -->
+<div class="save-bar">
+  <button class="btn btn-primary" onclick="saveData()">&#128190; Salvar progresso</button>
+  <button class="btn btn-secondary" onclick="exportData()">&#128229; Exportar dados</button>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast">Progresso salvo com sucesso!</div>
+
+<!-- Footer -->
+<div class="footer">
+  <br>
+  Generado con html-builder &middot; 2026-04-16
+</div>
+
+<script>
+// ── Lock / tab logic ────────────────────────────────────
+var UNLOCK_MONTHS = [6, 6, 7, 8, 9, 10];
+var MONTH_NAMES   = ['Junho','Junho','Julho','Agosto','Setembro','Outubro'];
+
+function currentMonthYear() {
+  var d = new Date();
+  return { year: d.getFullYear(), month: d.getMonth() + 1 };
+}
+function isUnlocked(idx) {
+  var now = currentMonthYear();
+  return (now.year > 2026) || (now.year === 2026 && now.month >= UNLOCK_MONTHS[idx]);
+}
+function applyLocks() {
+  document.querySelectorAll('.tab').forEach(function(t, idx) {
+    t.classList[isUnlocked(idx) ? 'remove' : 'add']('locked');
+  });
+}
+function showTab(idx) {
+  if (!isUnlocked(idx)) { showToast('Este encontro abre em ' + MONTH_NAMES[idx]); return; }
+  document.querySelectorAll('.encounter').forEach(function(e) { e.classList.remove('active'); });
+  document.querySelectorAll('.tab').forEach(function(t) { t.classList.remove('active'); });
+  document.getElementById('enc' + idx).classList.add('active');
+  document.querySelectorAll('.tab')[idx].classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+// ── Progress ─────────────────────────────────────────────
+var monthStates = [false,false,false,false,false,false];
+function updateProgressUI() {
+  var count = monthStates.filter(Boolean).length;
+  document.getElementById('progressBar').style.width = Math.round(count/6*100) + '%';
+  document.getElementById('progressLabel').textContent = count + ' de 6 encontros concluídos';
+  for (var i = 0; i < 6; i++) {
+    document.getElementById('dot' + i).classList[monthStates[i] ? 'add' : 'remove']('completed');
+  }
+}
+function toggleMonth(idx) {
+  monthStates[idx] = !monthStates[idx];
+  updateProgressUI();
+  saveAll();
+  showToast('Progresso atualizado!');
+}
+
+// ── Persist: Grid when available, localStorage as fallback ──
+function collectFields() {
+  var data = {};
+  document.querySelectorAll('[data-key]').forEach(function(f) {
+    data[f.getAttribute('data-key')] = f.type === 'checkbox' ? f.checked : f.value;
+  });
+  return data;
+}
+function saveAll() {
+  var payload = { months: monthStates, fields: collectFields(), selectedValues: selectedValues };
+  if (window.GRID && window.GRID.state) {
+    window.GRID.state.set(payload).catch(function(){});
+  } else {
+    try { localStorage.setItem('graziela_mentoria', JSON.stringify(payload)); } catch(e){}
+  }
+}
+function loadAll() {
+  if (window.GRID && window.GRID.state) {
+    window.GRID.state.get().then(function(r) { applyPayload(r && r.state); }).catch(function(){});
+  } else {
+    try { applyPayload(JSON.parse(localStorage.getItem('graziela_mentoria'))); } catch(e){}
+  }
+}
+function applyPayload(s) {
+  if (!s) return;
+  if (s.months) { monthStates = s.months; updateProgressUI(); }
+  if (s.fields) {
+    Object.keys(s.fields).forEach(function(k) {
+      var el = document.querySelector('[data-key="' + k + '"]');
+      if (!el) return;
+      el.type === 'checkbox' ? (el.checked = s.fields[k]) : (el.value = s.fields[k]);
+    });
+  }
+  if (s.selectedValues) { selectedValues = s.selectedValues; restoreSelectedValues(); }
+}
+function saveData()   { saveAll(); showToast('Progresso salvo!'); }
+
+// ── Export ───────────────────────────────────────────────
+function exportData() {
+  var fields = document.querySelectorAll('[data-key]');
+  var lines = ['PLANO DE MENTORIA - GRAZIELA','Exportado em: ' + new Date().toLocaleDateString('pt-BR'),''];
+  fields.forEach(function(f) {
+    var val = f.type === 'checkbox' ? (f.checked ? 'Sim' : '') : f.value;
+    if (val) { lines.push(f.getAttribute('data-key').replace(/_/g,' ').toUpperCase() + ':'); lines.push(val); lines.push(''); }
+  });
+  var blob = new Blob([lines.join('\n')], { type: 'text/plain;charset=utf-8' });
+  var url  = URL.createObjectURL(blob);
+  var a    = document.createElement('a');
+  a.href = url; a.download = 'mentoria-graziela-export.txt'; a.click();
+  URL.revokeObjectURL(url);
+  showToast('Dados exportados!');
+}
+
+// ── Toast ────────────────────────────────────────────────
+function showToast(msg) {
+  var t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(function() { t.classList.remove('show'); }, 2500);
+}
+
+// ── Value cards ──────────────────────────────────────────
+var ALL_VALUES = [
+  'Justiça','Empatia','Coragem','Verdade','Proteção',
+  'Impacto','Autonomia','Lealdade','Integridade','Igualdade',
+  'Liberdade','Cuidado','Propósito','Responsabilidade',
+  'Persistência','Criatividade','Solidariedade','Transparência',
+  'Dignidade','Transformação'
+];
+var selectedValues = [];
+function buildValueGrid() {
+  var grid = document.getElementById('valueGrid');
+  if (!grid) return;
+  grid.innerHTML = '';
+  ALL_VALUES.forEach(function(v) {
+    var btn = document.createElement('button');
+    btn.textContent = v;
+    btn.setAttribute('data-value', v);
+    btn.style.cssText = 'padding:8px 16px;border-radius:9999px;border:2px solid var(--border-primary);background:#fff;font-family:var(--font);font-size:13px;font-weight:600;cursor:pointer;transition:all 0.2s;color:var(--text-secondary);';
+    btn.addEventListener('click', function() { toggleValue(v, btn); });
+    grid.appendChild(btn);
+  });
+  restoreSelectedValues();
+}
+function toggleValue(v, btn) {
+  var idx = selectedValues.indexOf(v);
+  if (idx > -1) {
+    selectedValues.splice(idx, 1);
+    btn.style.background = '#fff'; btn.style.color = 'var(--text-secondary)'; btn.style.borderColor = 'var(--border-primary)';
+  } else {
+    if (selectedValues.length >= 5) { showToast('Máximo de 5 valores'); return; }
+    selectedValues.push(v);
+    btn.style.background = 'var(--brand-blue)'; btn.style.color = '#fff'; btn.style.borderColor = 'var(--brand-blue)';
+  }
+  document.getElementById('valueCount').textContent = selectedValues.length + ' de 5 selecionados';
+  saveAll();
+}
+function restoreSelectedValues() {
+  selectedValues.forEach(function(v) {
+    var btn = document.querySelector('[data-value="' + v + '"]');
+    if (btn) { btn.style.background = 'var(--brand-blue)'; btn.style.color = '#fff'; btn.style.borderColor = 'var(--brand-blue)'; }
+  });
+  var el = document.getElementById('valueCount');
+  if (el) el.textContent = selectedValues.length + ' de 5 selecionados';
+}
+
+// ── Init ─────────────────────────────────────────────────
+buildValueGrid();
+applyLocks();
+updateProgressUI();
+loadAll();
+
+document.addEventListener('input', function(e) {
+  if (e.target.hasAttribute('data-key')) {
+    clearTimeout(window._saveTimer);
+    window._saveTimer = setTimeout(saveAll, 2000);
+  }
+});
+</script>
+
+<script>
+/* Grid: only allow approved Grid domains to open unsandboxed tabs */
+(function(){
+  var allowedHosts = ["figma.com", "www.figma.com", "furydocs.io", "zeroheight.com", "google.com", "docs.google.com", "meet.google.com", "grid.adminml.com", "grid-artifacts.adminml.com", "mercadolibre.atlassian.net", "mercadolibre-opsgenie.atlassian.net", "app.datadoghq.com", "grafana-service.furycloud.io", "web.furycloud.io", "nasdaq-meli.app.opsgenie.com", "meli.enterprise.slack.com"];
+  var allowedSuffixes = [".adminml.com", ".atlassian.net", ".google.com", ".furycloud.io", ".melioffice.com", ".melisystems.com"];
+  var allowedPathPrefixes = {"github.com": ["/melisource/"], "www.github.com": ["/melisource/"]};
+  function normalizeUrl(rawUrl){
+    try {
+      return new URL(String(rawUrl || ""), window.location.href);
+    } catch (_err) {
+      return null;
+    }
+  }
+  function isAllowedUrl(rawUrl){
+    var parsed = normalizeUrl(rawUrl);
+    if(!parsed) return false;
+    if(parsed.protocol === "slack:") return true;
+    if(parsed.protocol !== "https:") return false;
+    var h = (parsed.hostname || "").toLowerCase();
+    if(!h) return false;
+    if(allowedHosts.indexOf(h) !== -1) return true;
+    for(var i = 0; i < allowedSuffixes.length; i++){
+      var s = allowedSuffixes[i];
+      if(h === s.slice(1) || (h.length > s.length && h.slice(-s.length) === s)) return true;
+    }
+    var pathPrefixes = allowedPathPrefixes[h];
+    if(pathPrefixes){
+      var p = parsed.pathname || "/";
+      for(var j = 0; j < pathPrefixes.length; j++){
+        if(p.slice(0, pathPrefixes[j].length) === pathPrefixes[j]) return true;
+      }
+    }
+    return false;
+  }
+  function requestParentPopup(rawUrl){
+    var parsed = normalizeUrl(rawUrl);
+    if(!parsed || !window.parent || window.parent === window) return false;
+    try {
+      window.parent.postMessage({type: "grid-open-safe-popup", url: parsed.href}, window.location.origin);
+      return true;
+    } catch (_err) {
+      return false;
+    }
+  }
+
+  document.addEventListener("click", function(event){
+    var target = event.target;
+    var anchor = target && target.closest ? target.closest("a[href]") : null;
+    if(!anchor) return;
+    var href = anchor.getAttribute("href") || "";
+    if(!href || href.charAt(0) === "#") return;
+    var opensNewTab = anchor.target === "_blank" || event.ctrlKey || event.metaKey || event.button === 1;
+    if(!opensNewTab) return;
+    if(!isAllowedUrl(href)) {
+      event.preventDefault();
+      event.stopPropagation();
+      return;
+    }
+    if(requestParentPopup(href)) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  }, true);
+
+  var nativeOpen = window.open;
+  window.open = function(rawUrl, target, features){
+    if(!isAllowedUrl(rawUrl)) return null;
+    if(requestParentPopup(rawUrl)) return null;
+    return nativeOpen ? nativeOpen.call(window, normalizeUrl(rawUrl).href, target, features) : null;
+  };
+})();
+</script>
+<script>
+/* Grid: sync iframe URL mutations to parent address bar */
+(function(){
+  function notifyParent(search, hash){
+    if(!window.parent || window.parent === window) return;
+    try{
+      window.parent.postMessage(
+        {type:"grid-url-sync", search:search, hash:hash},
+        window.location.origin
+      );
+    }catch(_){}
+  }
+  function parseAndNotify(url){
+    try{
+      var p = new URL(String(url), window.location.href);
+      notifyParent(p.search, p.hash);
+    }catch(_){}
+  }
+  var _push = history.pushState.bind(history);
+  var _replace = history.replaceState.bind(history);
+  history.pushState = function(state, title, url){
+    _push(state, title, url);
+    if(url != null) parseAndNotify(url);
+  };
+  history.replaceState = function(state, title, url){
+    _replace(state, title, url);
+    if(url != null) parseAndNotify(url);
+  };
+  window.addEventListener("hashchange", function(){
+    notifyParent(window.location.search, window.location.hash);
+  });
+})();
+</script>
+</body>
+</html>
