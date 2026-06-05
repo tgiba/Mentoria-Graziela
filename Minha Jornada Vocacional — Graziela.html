@@ -1,0 +1,1321 @@
+<!DOCTYPE html>
+<!-- saved from url=(0259)file:///C:/Users/tgibertoni/AppData/Local/Packages/Claude_pzs8sxrjxfjjc/LocalCache/Roaming/Claude/local-agent-mode-sessions/9bb717a8-85d9-435d-8ea5-6677dd05dbe4/d247d3bd-99ee-49c3-9a1e-110678353e64/local_6b16e565-f691-4c6c-84ae-e70105369928/outputs/index.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minha Jornada Vocacional — Graziela</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --brand-yellow: #ffe600;
+  --brand-blue: #434ce4;
+  --text-primary: #282834;
+  --text-secondary: #646587;
+  --text-disabled: #9c9ebf;
+  --text-accent: #434ce4;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4f5f9;
+  --border-primary: #d0d4e6;
+  --border-accent: #434ce4;
+  --positive-loud: #1f8923;
+  --positive-quiet: #defade;
+  --caution-loud: #d74009;
+  --caution-quiet: #ffedc7;
+  --negative-loud: #9e0015;
+  --info-loud: #434ce4;
+  --info-quiet: #e9f1ff;
+  --neutral-loud: #646587;
+  --neutral-quiet: #e7e9f3;
+  --gray-100: #f4f5f9;
+  --gray-200: #e7e9f3;
+  --gray-300: #d0d4e6;
+  --gray-700: #646587;
+  --gray-900: #282834;
+  --shadow-low: 0 2px 4px 0 rgba(40,40,52,0.1);
+  --r-12: 12px;
+  --r-20: 20px;
+  --r-full: 9999px;
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* Navbar */
+.navbar {
+  background: var(--brand-yellow);
+  height: 56px;
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar img { height: 28px; }
+
+/* Layout */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 24px 64px;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--brand-blue) 0%, #6a5fdb 100%);
+  border-radius: var(--r-20);
+  padding: 48px 40px;
+  color: #fff;
+  margin-bottom: 32px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  top: -40px; right: -40px;
+  width: 200px; height: 200px;
+  background: rgba(255,255,255,0.06);
+  border-radius: 50%;
+}
+.hero h1 { font-size: 2rem; font-weight: 700; margin-bottom: 8px; line-height: 1.2; }
+.hero p { font-size: 1rem; opacity: 0.85; max-width: 600px; }
+
+/* Progress bar */
+.progress-section {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--r-20);
+  padding: 24px;
+  margin-bottom: 32px;
+}
+.progress-section h3 { font-size: 16px; font-weight: 600; margin-bottom: 16px; color: var(--text-secondary); }
+.progress-bar-track {
+  background: var(--gray-200);
+  border-radius: var(--r-full);
+  height: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.progress-bar-fill {
+  height: 100%;
+  border-radius: var(--r-full);
+  background: linear-gradient(90deg, var(--brand-blue), #6a5fdb);
+  transition: width 0.5s ease;
+}
+.progress-label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+.month-dots {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.month-dot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+.month-dot .dot {
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--gray-300);
+  background: #fff;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  color: transparent;
+}
+.month-dot .dot.completed {
+  background: var(--positive-loud);
+  border-color: var(--positive-loud);
+  color: #fff;
+}
+.month-dot span:last-child {
+  font-size: 11px;
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--r-20);
+  padding: 6px;
+}
+.tab {
+  padding: 10px 18px;
+  border-radius: 14px;
+  border: none;
+  background: transparent;
+  font-family: var(--font);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+.tab:hover { background: var(--gray-100); }
+.tab.active {
+  background: var(--brand-blue);
+  color: #fff;
+}
+.tab .badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.25);
+  padding: 1px 7px;
+  border-radius: var(--r-full);
+  font-size: 11px;
+  margin-left: 6px;
+}
+.tab:not(.active) .badge {
+  background: var(--gray-200);
+}
+.tab.locked {
+  color: var(--text-disabled);
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+.tab.locked:hover { background: transparent; }
+.tab.locked .badge { background: var(--gray-200); color: var(--text-disabled); }
+
+
+/* Encounter card */
+.encounter {
+  display: none;
+}
+.encounter.active { display: block; }
+
+.card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--r-20);
+  padding: 28px;
+  margin-bottom: 20px;
+}
+.card h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card h2 .icon {
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+.card .subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+.card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px 0 12px;
+  color: var(--text-primary);
+}
+.card p, .card li {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+.card ul, .card ol {
+  padding-left: 20px;
+  margin-bottom: 12px;
+}
+.card li { margin-bottom: 6px; }
+
+/* Mission box */
+.mission-box {
+  background: linear-gradient(135deg, var(--info-quiet), #f3eeff);
+  border: 1px solid rgba(67,76,228,0.15);
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 20px;
+}
+.mission-box .mission-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--brand-blue);
+}
+.mission-box p {
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+/* Interactive fields */
+textarea.field {
+  width: 100%;
+  min-height: 100px;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--r-12);
+  padding: 14px;
+  font-family: var(--font);
+  font-size: 14px;
+  resize: vertical;
+  transition: border-color 0.2s;
+  background: #fff;
+  color: var(--text-primary);
+  line-height: 1.5;
+  margin-top: 8px;
+}
+textarea.field:focus {
+  outline: none;
+  border-color: var(--brand-blue);
+  box-shadow: 0 0 0 3px rgba(67,76,228,0.1);
+}
+textarea.field::placeholder { color: var(--text-disabled); }
+
+input.field-input {
+  width: 100%;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--r-12);
+  padding: 10px 14px;
+  font-family: var(--font);
+  font-size: 14px;
+  background: #fff;
+  color: var(--text-primary);
+  transition: border-color 0.2s;
+}
+input.field-input:focus {
+  outline: none;
+  border-color: var(--brand-blue);
+  box-shadow: 0 0 0 3px rgba(67,76,228,0.1);
+}
+
+.field-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+  display: block;
+  margin-top: 14px;
+}
+
+/* Interactive table */
+.int-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin-top: 12px;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--r-12);
+  overflow: hidden;
+}
+.int-table th {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 12px 14px;
+  text-align: left;
+  letter-spacing: 0.03em;
+}
+.int-table td {
+  padding: 4px;
+  border-top: 1px solid var(--border-primary);
+  vertical-align: top;
+}
+.int-table td input,
+.int-table td textarea {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  font-family: var(--font);
+  font-size: 13px;
+  background: transparent;
+  color: var(--text-primary);
+  resize: vertical;
+}
+.int-table td input:focus,
+.int-table td textarea:focus {
+  outline: none;
+  background: var(--info-quiet);
+}
+.int-table td textarea { min-height: 60px; }
+
+/* Checklist */
+.checklist { list-style: none; padding: 0; }
+.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+.checklist li:last-child { border: none; }
+.checklist input[type="checkbox"] {
+  width: 20px; height: 20px;
+  accent-color: var(--brand-blue);
+  flex-shrink: 0;
+  margin-top: 1px;
+  cursor: pointer;
+}
+
+/* Compare table */
+.compare-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--r-12);
+  overflow: hidden;
+  font-size: 13px;
+  margin-top: 12px;
+}
+.compare-table th {
+  background: var(--bg-secondary);
+  color: var(--text-secondary);
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 12px 14px;
+  text-align: left;
+  letter-spacing: 0.03em;
+}
+.compare-table td {
+  padding: 10px 14px;
+  border-top: 1px solid var(--border-primary);
+  vertical-align: top;
+  line-height: 1.5;
+}
+.compare-table tr:hover td { background: var(--gray-100); }
+.compare-table td:first-child { font-weight: 600; color: var(--text-secondary); white-space: nowrap; }
+
+/* Pill tags */
+.pill {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: var(--r-full);
+  font-size: 12px;
+  font-weight: 600;
+}
+.pill-green { background: var(--positive-quiet); color: var(--positive-loud); }
+.pill-orange { background: var(--caution-quiet); color: var(--caution-loud); }
+.pill-blue { background: var(--info-quiet); color: var(--info-loud); }
+.pill-gray { background: var(--neutral-quiet); color: var(--neutral-loud); }
+
+/* Timeline */
+.timeline {
+  position: relative;
+  padding-left: 28px;
+  margin-top: 16px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  bottom: 4px;
+  width: 2px;
+  background: var(--gray-300);
+}
+.timeline-item {
+  position: relative;
+  padding-bottom: 20px;
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--brand-blue);
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px var(--brand-blue);
+}
+.timeline-item .tl-label {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--brand-blue);
+}
+.timeline-item .tl-desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+/* Questions list */
+.question-list li {
+  font-style: italic;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Resources list */
+.resource-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--gray-100);
+}
+.resource-item:last-child { border: none; }
+.resource-icon {
+  width: 36px; height: 36px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.resource-item .r-name { font-weight: 600; font-size: 14px; }
+.resource-item .r-desc { font-size: 12px; color: var(--text-secondary); }
+
+/* Dicas card */
+.tip-card {
+  background: var(--caution-quiet);
+  border: 1px solid rgba(215,64,9,0.12);
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-top: 16px;
+}
+.tip-card h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--caution-loud);
+  margin-bottom: 8px;
+}
+.tip-card p, .tip-card li {
+  font-size: 13px;
+  color: #5a3200;
+}
+
+/* Map builder */
+.path-builder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 16px;
+}
+@media (max-width: 640px) { .path-builder { grid-template-columns: 1fr; } }
+.path-col {
+  border: 2px dashed var(--border-primary);
+  border-radius: 16px;
+  padding: 20px;
+  transition: border-color 0.3s;
+}
+.path-col:focus-within { border-color: var(--brand-blue); }
+.path-col h4 {
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 16px;
+  color: var(--brand-blue);
+}
+
+/* Save button */
+.save-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  border-top: 1px solid var(--border-primary);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  z-index: 100;
+}
+.btn {
+  padding: 10px 24px;
+  border-radius: var(--r-12);
+  border: none;
+  font-family: var(--font);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-primary {
+  background: var(--brand-blue);
+  color: #fff;
+}
+.btn-primary:hover { background: #3740c7; }
+.btn-secondary {
+  background: var(--gray-200);
+  color: var(--text-primary);
+}
+.btn-secondary:hover { background: var(--gray-300); }
+
+/* Saved toast */
+.toast {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background: var(--gray-900);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: var(--r-full);
+  font-size: 14px;
+  font-weight: 600;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+  z-index: 200;
+}
+.toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 32px 24px;
+  color: var(--text-disabled);
+  font-size: 12px;
+}
+.footer img { height: 20px; margin-bottom: 8px; opacity: 0.4; }
+
+/* Print */
+@media print {
+  .navbar, .save-bar, .tabs { display: none !important; }
+  .encounter { display: block !important; page-break-inside: avoid; }
+  .card { break-inside: avoid; }
+  body { background: #fff; }
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  
+</nav>
+
+<div class="container">
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Minha Jornada Vocacional</h1>
+    <p>Oi, Graziela! Este é o seu espaço para registrar descobertas, reflexões e avanços ao longo dos 6 meses de mentoria (junho–outubro 2026). Tudo que você escrever aqui fica salvo automaticamente.</p>
+  </div>
+
+  <!-- Progress -->
+  <div class="progress-section">
+    <h3>Progresso da mentoria</h3>
+    <div class="progress-bar-track">
+      <div class="progress-bar-fill" id="progressBar" style="width: 0%;"></div>
+    </div>
+    <div class="progress-label" id="progressLabel">0 de 6 encontros concluídos</div>
+    <div class="month-dots">
+      <div class="month-dot" onclick="toggleMonth(0)"><div class="dot" id="dot0">✓</div><span>Val</span></div>
+      <div class="month-dot" onclick="toggleMonth(1)"><div class="dot" id="dot1">✓</div><span>Jun</span></div>
+      <div class="month-dot" onclick="toggleMonth(2)"><div class="dot" id="dot2">✓</div><span>Jul</span></div>
+      <div class="month-dot" onclick="toggleMonth(3)"><div class="dot" id="dot3">✓</div><span>Ago</span></div>
+      <div class="month-dot" onclick="toggleMonth(4)"><div class="dot" id="dot4">✓</div><span>Set</span></div>
+      <div class="month-dot" onclick="toggleMonth(5)"><div class="dot" id="dot5">✓</div><span>Out</span></div>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs" id="tabsContainer">
+    <button class="tab active" onclick="showTab(0)">Fundação <span class="badge">Valores</span></button>
+    <button class="tab" onclick="showTab(1)">1. Jun <span class="badge">Caminhos</span></button>
+    <button class="tab locked" onclick="showTab(2)">2. Jul <span class="badge">Áreas</span></button>
+    <button class="tab locked" onclick="showTab(3)">3. Ago <span class="badge">Mercado</span></button>
+    <button class="tab locked" onclick="showTab(4)">4. Set <span class="badge">Convicção</span></button>
+    <button class="tab locked" onclick="showTab(5)">5. Out <span class="badge">Largada</span></button>
+  </div>
+
+  <!-- ============ FUNDAÇÃO - VALORES ============ -->
+  <div class="encounter active" id="enc0">
+    <div class="card">
+      <h2><span class="icon" style="background:#f3eeff;color:#6a5fdb;">✨</span> Fundação — Valores &amp; Propósito</h2>
+      <div class="subtitle">Por dentro de quem você é • Valores, propósito e resiliência no Direito brasileiro</div>
+
+      <!-- PARTE 1 -->
+      <h3>Parte 1 — Seus valores</h3>
+      <p style="color:var(--text-secondary);font-size:13px;margin-bottom:16px;">Valores são princípios que guiam suas decisões mesmo quando é difícil. Eles explicam por que certas injustiças te incomodam mais que outras — e por que você escolheria um caminho mesmo sabendo que será desafiador.</p>
+
+      <p style="font-weight:600;font-size:14px;margin-bottom:12px;">Selecione até 5 valores que mais ressoam com você:</p>
+      <div id="valueGrid" style="display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px;"><button data-value="Justiça" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Justiça</button><button data-value="Empatia" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Empatia</button><button data-value="Coragem" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Coragem</button><button data-value="Verdade" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Verdade</button><button data-value="Proteção" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Proteção</button><button data-value="Impacto" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Impacto</button><button data-value="Autonomia" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Autonomia</button><button data-value="Lealdade" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Lealdade</button><button data-value="Integridade" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Integridade</button><button data-value="Igualdade" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Igualdade</button><button data-value="Liberdade" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Liberdade</button><button data-value="Cuidado" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Cuidado</button><button data-value="Propósito" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Propósito</button><button data-value="Responsabilidade" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Responsabilidade</button><button data-value="Persistência" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Persistência</button><button data-value="Criatividade" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Criatividade</button><button data-value="Solidariedade" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Solidariedade</button><button data-value="Transparência" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Transparência</button><button data-value="Dignidade" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Dignidade</button><button data-value="Transformação" style="padding: 8px 16px; border-radius: 9999px; border: 2px solid var(--border-primary); background: rgb(255, 255, 255); font-family: var(--font); font-size: 13px; font-weight: 600; cursor: pointer; transition: 0.2s; color: var(--text-secondary);">Transformação</button></div>
+      <p id="valueCount" style="font-size:12px;color:var(--text-secondary);margin-bottom:16px;">0 de 5 selecionados</p>
+
+      <label class="field-label">Para cada valor que escolheu, escreva uma frase: por que ele importa pra você?</label>
+      <textarea class="field" data-key="val_explicacao" placeholder="Ex: Justiça — porque cresci vendo pessoas sendo tratadas de forma diferente e sempre soube que isso estava errado..." style="min-height:140px;"></textarea>
+
+      <label class="field-label" style="margin-top:20px;">O que seria inegociável para você na vida profissional? (2 ou 3 coisas que você jamais abriria mão)</label>
+      <textarea class="field" data-key="val_inegociavel" placeholder="Ex: Não trabalhar para quem claramente é culpado... ter autonomia para escolher meus casos... sentir que estou do lado certo..." style="min-height:100px;"></textarea>
+    </div>
+
+    <!-- PARTE 2 -->
+    <div class="card">
+      <h3 style="margin-top:0;">Parte 2 — A realidade do Direito no Brasil</h3>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:16px 0 20px;">
+        <div style="background:var(--caution-quiet);border-radius:16px;padding:18px;text-align:center;">
+          <div style="font-size:26px;font-weight:700;color:var(--caution-loud);">78M</div>
+          <div style="font-size:12px;color:var(--text-secondary);font-weight:600;">processos em tramitação no Brasil (2024)</div>
+        </div>
+        <div style="background:var(--caution-quiet);border-radius:16px;padding:18px;text-align:center;">
+          <div style="font-size:26px;font-weight:700;color:var(--caution-loud);">~95%</div>
+          <div style="font-size:12px;color:var(--text-secondary);font-weight:600;">taxa de impunidade em crimes violentos</div>
+        </div>
+        <div style="background:var(--caution-quiet);border-radius:16px;padding:18px;text-align:center;">
+          <div style="font-size:26px;font-weight:700;color:var(--caution-loud);">8%</div>
+          <div style="font-size:12px;color:var(--text-secondary);font-weight:600;">dos homicídios resultam em condenação</div>
+        </div>
+        <div style="background:var(--caution-quiet);border-radius:16px;padding:18px;text-align:center;">
+          <div style="font-size:26px;font-weight:700;color:var(--caution-loud);">5–12 anos</div>
+          <div style="font-size:12px;color:var(--text-secondary);font-weight:600;">duração média de um processo judicial</div>
+        </div>
+      </div>
+
+      <div class="tip-card">
+        <h4>💡 Por que isso importa</h4>
+        <p>Advogados que constroem carreiras longas e significativas no Brasil não ignoram essa realidade — eles escolheram o Direito <em>apesar</em> dela, ou <em>por causa</em> dela. Entender sua relação com essa frustração agora é mais valioso do que qualquer nota na faculdade.</p>
+      </div>
+
+      <label class="field-label" style="margin-top:20px;">Como você se sente ao ler esses dados? Seja honesta — raiva, desespero, motivação, tudo é válido.</label>
+      <textarea class="field" data-key="val_reacao_dados" placeholder="Quando leio isso, sinto..." style="min-height:120px;"></textarea>
+    </div>
+
+    <!-- PARTE 3 -->
+    <div class="card">
+      <h3 style="margin-top:0;">Parte 3 — Seu momento de injustiça</h3>
+      <p style="color:var(--text-secondary);font-size:13px;margin-bottom:16px;">Escreva sobre um momento em que sentiu que algo foi profundamente injusto — pode ser algo que aconteceu com você, com alguém que ama, ou algo que testemunhou. Não precisa ser relacionado ao Direito.</p>
+
+      <label class="field-label">O que aconteceu? O que sentiu? Como reagiu?</label>
+      <textarea class="field" data-key="val_injustica" placeholder="Lembro de quando..." style="min-height:180px;"></textarea>
+
+      <label class="field-label" style="margin-top:16px;">O que esse episódio revela sobre o que você defende? O que ele diz sobre quem você é?</label>
+      <textarea class="field" data-key="val_injustica_reflexao" placeholder="Acho que esse momento me mostrou que eu..." style="min-height:100px;"></textarea>
+    </div>
+
+    <!-- PARTE 4 -->
+    <div class="card">
+      <h3 style="margin-top:0;">Parte 4 — O teste de convicção</h3>
+
+      <div style="background:linear-gradient(135deg,#2d1b69,#434ce4);border-radius:16px;padding:28px;color:#fff;margin-bottom:24px;">
+        <p style="font-size:15px;line-height:1.8;font-weight:500;">Se você soubesse que durante toda a sua carreira — o sistema <strong>nunca seria perfeito</strong>, a impunidade continuaria existindo, você perderia casos que deveriam ganhar, réus culpados sairiam livres, e nem sempre a justiça prevaleceria —</p>
+        <p style="font-size:20px;font-weight:700;margin-top:16px;line-height:1.4;">ainda assim escolheria o Direito?<br>Por quê?</p>
+      </div>
+
+      <textarea class="field" data-key="val_teste_conviccao" placeholder="Sim / Não / Não sei — e aqui está o que me faz responder assim..." style="min-height:200px;font-size:15px;line-height:1.8;"></textarea>
+    </div>
+
+    <!-- PARTE 5 -->
+    <div class="card">
+      <h3 style="margin-top:0;">Parte 5 — Seu porquê</h3>
+      <p style="color:var(--text-secondary);font-size:13px;margin-bottom:20px;">Complete as frases com suas próprias palavras. Não existe resposta certa — existe a sua.</p>
+
+      <label class="field-label">🌍 “Eu me importo com Direito porque o mundo seria melhor se...”</label>
+      <textarea class="field" data-key="val_porque_mundo" placeholder="...as pessoas mais vulneráveis tivessem voz igual..." style="min-height:100px;"></textarea>
+
+      <label class="field-label" style="margin-top:16px;">🤝 “O que eu quero que as pessoas sintam quando saem de uma conversa comigo como advogada é...”</label>
+      <textarea class="field" data-key="val_quero_que_sintam" placeholder="...que foram ouvidas de verdade..." style="min-height:100px;"></textarea>
+
+      <label class="field-label" style="margin-top:16px;">💡 “O que me sustentaria nos dias difíceis dentro do sistema é...”</label>
+      <textarea class="field" data-key="val_sustento" placeholder="...saber que mesmo um caso resolvido muda a vida daquela pessoa..." style="min-height:100px;"></textarea>
+
+      <div class="mission-box" style="margin-top:24px;">
+        <div class="mission-header">🎯 Antes do próximo encontro</div>
+        <p>Releia o que você escreveu aqui antes de abrir a aba <strong>Caminhos</strong>. Os valores que você identificou serão o seu filtro para avaliar cada opção de carreira.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ ENCONTRO 1 - JUNHO ============ -->
+  <div class="encounter" id="enc1">
+    <div class="card">
+      <h2><span class="icon" style="background:var(--positive-quiet);color:var(--positive-loud);">🛠</span> Encontro 1 — Junho</h2>
+      <div class="subtitle">Concurso, OAB e caminhos possíveis • Planejamento de carreira pós-formatura</div>
+
+      <h3>Três caminhos em detalhe</h3>
+
+      <!-- Defensoria -->
+      <div style="border:1px solid var(--border-primary);border-radius:16px;padding:20px;margin-bottom:16px;">
+        <h4 style="font-size:16px;font-weight:700;color:var(--positive-loud);margin-bottom:12px;">⚖️ Defensoria Pública</h4>
+        <div style="overflow-x:auto;">
+        <table class="compare-table" style="margin-top:0;">
+          <tbody>
+            <tr><td>O que faz</td><td>Representa judicialmente pessoas que não podem pagar advogado — famílias de baixa renda, presos, vítimas de violência</td></tr>
+            <tr><td>Áreas de atuação</td><td>Família (guarda, pensão), penal (defesa de réus), consumidor, saúde (medicamentos via SUS), habitação</td></tr>
+            <tr><td>Como chegar</td><td>Faculdade (5 anos) → OAB → 2 anos de prática → concurso público</td></tr>
+            <tr><td>Remuneração</td><td><strong>R$ 22.000–33.000</strong> (DPU paga mais)</td></tr>
+            <tr><td>Estabilidade</td><td><span class="pill pill-green">Alta — cargo vitalício</span></td></tr>
+            <tr><td>Home office</td><td><span class="pill pill-orange">Parcial</span> — audiências presenciais, mas análise e petições podem ser remotas</td></tr>
+            <tr><td>Rotina típica</td><td>Atendimento ao público, audiências, peças, plantões (penal), visitas a presídios</td></tr>
+            <tr><td>Propósito</td><td><span class="pill pill-green">Altíssimo</span> — você é a voz de quem não tem voz</td></tr>
+            <tr><td>Desafios</td><td>Volume enorme de casos, carga emocional forte, estrutura precária em alguns estados</td></tr>
+            <tr><td>Perfil ideal</td><td>Empatia forte, resistência emocional, vontade de ajudar diretamente pessoas vulneráveis</td></tr>
+            <tr><td>No RS</td><td>DPE-RS com sede em POA e unidades no interior. Salário inicial ~R$ 28.000</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+      <!-- Direito Civil -->
+      <div style="border:1px solid var(--border-primary);border-radius:16px;padding:20px;margin-bottom:16px;">
+        <h4 style="font-size:16px;font-weight:700;color:var(--brand-blue);margin-bottom:12px;">⚖️ Advocacia em Direito Civil</h4>
+        <div style="overflow-x:auto;">
+        <table class="compare-table" style="margin-top:0;">
+          <tbody>
+            <tr><td>O que faz</td><td>Atua em conflitos entre pessoas ou empresas: contratos, indenizações, herança, propriedade, consumidor, responsabilidade civil</td></tr>
+            <tr><td>Áreas de atuação</td><td>Contratos, família e sucessões, imobiliário, consumidor, danos morais/materiais, cobranças</td></tr>
+            <tr><td>Como chegar</td><td>Faculdade (5 anos) → OAB → início imediato (escritório próprio, associada, ou correspondente)</td></tr>
+            <tr><td>Remuneração</td><td>Júnior: <strong>R$ 3.500–6.000</strong>; autônoma com carteira: depende do volume; pode crescer para R$ 10k–30k+ com o tempo</td></tr>
+            <tr><td>Estabilidade</td><td><span class="pill pill-orange">Baixa no início</span> — depende de construir clientela e reputação</td></tr>
+            <tr><td>Home office</td><td><span class="pill pill-green">Alto</span> — consultivo quase 100% remoto; contencioso com audiências virtuais; peticionamento eletrônico</td></tr>
+            <tr><td>Rotina típica</td><td>Atender clientes, redigir contratos e petições, acompanhar processos, audiências, negociar acordos</td></tr>
+            <tr><td>Propósito</td><td><span class="pill pill-blue">Médio a alto</span> — ajuda pessoas em momentos difíceis (divórcio, golpe, herança), contato mais pontual</td></tr>
+            <tr><td>Desafios</td><td>Mercado saturado, inadimplência de clientes, renda instável no início, necessidade de captar clientes</td></tr>
+            <tr><td>Perfil ideal</td><td>Organização, boa comunicação, negociação, autonomia, perfil empreendedor</td></tr>
+            <tr><td>No RS</td><td>Grande mercado em POA e região metropolitana. Interior tem menos concorrência e boa demanda em família, consumidor e imobiliário</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+      <!-- Direito Ambiental -->
+      <div style="border:1px solid var(--border-primary);border-radius:16px;padding:20px;margin-bottom:16px;">
+        <h4 style="font-size:16px;font-weight:700;color:#1f8923;margin-bottom:12px;">🌿 Advocacia em Direito Ambiental</h4>
+        <div style="overflow-x:auto;">
+        <table class="compare-table" style="margin-top:0;">
+          <tbody>
+            <tr><td>O que faz</td><td>Proteção do meio ambiente, licenciamento, créditos de carbono, compliance ESG, regularização de propriedades rurais</td></tr>
+            <tr><td>Áreas de atuação</td><td>Licenciamento ambiental, ESG corporativo, direito minerário, direito animal, regularização fundiária, ações civis públicas</td></tr>
+            <tr><td>Como chegar</td><td>Faculdade (5 anos) → OAB → pós em Dir. Ambiental (recomendada) → escritório, ONG, órgão público ou consultoria</td></tr>
+            <tr><td>Remuneração</td><td>Escritório: <strong>R$ 4.000–8.000</strong>; órgão público (IBAMA): R$ 8k–16k; consultoria ESG: R$ 15k–25k+ com experiência</td></tr>
+            <tr><td>Estabilidade</td><td><span class="pill pill-orange">Depende do caminho</span> — órgão público via concurso = estabilidade; consultoria = variável</td></tr>
+            <tr><td>Home office</td><td><span class="pill pill-orange">Parcial</span> — pareceres e consultoria ESG remotos, mas vistorias técnicas e audiências são presenciais</td></tr>
+            <tr><td>Rotina típica</td><td>Análise de legislação, pareceres, EIA/RIMA, licenciamentos, auditorias ESG, negociação com órgãos (IBAMA, FEPAM)</td></tr>
+            <tr><td>Propósito</td><td><span class="pill pill-green">Muito alto</span> — proteger rios, florestas, comunidades. Impacto direto no planeta e gerações futuras</td></tr>
+            <tr><td>Desafios</td><td>Mercado de nicho (menos vagas), pressão econômica vs. proteção ambiental, conhecimento técnico interdisciplinar necessário</td></tr>
+            <tr><td>Perfil ideal</td><td>Preocupação com meio ambiente, gosta de legislação complexa, interesse em ESG, perfil investigativo, interdisciplinar</td></tr>
+            <tr><td>No RS</td><td>FEPAM (estadual), casos de mineração e agronegócio. Pós-enchentes de 2024: aumento de demanda em recuperação ambiental</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+
+
+      <!-- Direito Digital -->
+      <div style="border:1px solid var(--border-primary);border-radius:16px;padding:20px;margin-bottom:16px;">
+        <h4 style="font-size:16px;font-weight:700;color:#6a5fdb;margin-bottom:12px;">💻 Advocacia em Direito Digital</h4>
+        <div style="overflow-x:auto;">
+        <table class="compare-table" style="margin-top:0;">
+          <tbody>
+            <tr><td>O que faz</td><td>Proteção de dados (LGPD), contratos digitais, propriedade intelectual online, crimes cibernéticos, regulatório de IA e plataformas</td></tr>
+            <tr><td>Áreas de atuação</td><td>LGPD e privacidade, e-commerce, crimes digitais, propriedade intelectual, contratos de software, compliance de IA, startups e fintechs</td></tr>
+            <tr><td>Como chegar</td><td>Faculdade (5 anos) → OAB → pós em Direito Digital / LGPD (recomendada) → escritório especializado, DPO in-house ou consultoria</td></tr>
+            <tr><td>Remuneração</td><td>Junior: <strong>R$ 5.000–9.000</strong>; DPO in-house (empresa): R$ 12k–22k; consultoria sênior: R$ 20k–40k+</td></tr>
+            <tr><td>Estabilidade</td><td><span class="pill pill-blue">Crescente</span> — demanda explodindo com LGPD e regulatório de IA; mercado ainda pouco saturado</td></tr>
+            <tr><td>Home office</td><td><span class="pill pill-green">Muito alto</span> — trabalho quase 100% remoto; clientes no Brasil todo e no exterior</td></tr>
+            <tr><td>Rotina típica</td><td>Pareceres de adequação à LGPD, revisão de políticas de privacidade, contratos de SaaS, auditorias de dados, respostas a incidentes, trêinamentos internos</td></tr>
+            <tr><td>Propósito</td><td><span class="pill pill-blue">Alto</span> — protege direitos das pessoas no mundo digital; área em constante evolução com impacto real na sociedade</td></tr>
+            <tr><td>Desafios</td><td>Legislação muda rápido (exige atualização contínua), interdisciplinar (direito + tecnologia), clientes ainda educando sobre a importância da área</td></tr>
+            <tr><td>Perfil ideal</td><td>Curiosidade por tecnologia, gosta de aprender rápido, comunicação clara, conforto com ambiguidade, interesse em IA e privacidade</td></tr>
+            <tr><td>No RS</td><td>Mercado concentrado em POA (startups, agências, fintechs), mas atuacão 100% remota permite clientes de SP, RJ e exterior</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+      <h3>Quadro comparativo resumido</h3>
+      <div style="overflow-x:auto;">
+      <table class="compare-table">
+        <thead><tr><th>Critério</th><th>Defensoria Pública</th><th>Direito Civil</th><th>Direito Ambiental</th><th>Direito Digital</th></tr></thead>
+        <tbody>
+          <tr><td>Ajuda pessoas?</td><td>Diretamente, as mais vulneráveis</td><td>Sim, questões do cotidiano</td><td>Comunidades e gerações futuras</td><td>Protege direitos no mundo digital</td></tr>
+          <tr><td>Renda inicial</td><td><span class="pill pill-green">R$ 22k–33k</span></td><td><span class="pill pill-orange">R$ 3,5k–6k</span></td><td><span class="pill pill-blue">R$ 4k–8k</span></td><td><span class="pill pill-blue">R$ 5k–9k</span></td></tr>
+          <tr><td>Estabilidade</td><td><span class="pill pill-green">Alta (concurso)</span></td><td><span class="pill pill-orange">Baixa no início</span></td><td><span class="pill pill-orange">Depende do caminho</span></td><td><span class="pill pill-blue">Crescente</span></td></tr>
+          <tr><td>Home office</td><td><span class="pill pill-orange">Parcial</span></td><td><span class="pill pill-green">Alto</span></td><td><span class="pill pill-orange">Parcial</span></td><td><span class="pill pill-green">Muito alto</span></td></tr>
+          <tr><td>Tempo até atuar</td><td>~9–11 anos</td><td>~5–6 anos</td><td>~6–7 anos</td><td>~6–7 anos</td></tr>
+          <tr><td>Saturação</td><td><span class="pill pill-green">Baixa</span></td><td><span class="pill pill-orange">Alta</span></td><td><span class="pill pill-green">Baixa (nicho)</span></td><td><span class="pill pill-green">Muito baixa</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h3>Linha do tempo realista</h3>
+      <div class="timeline">
+        <div class="timeline-item"><div class="tl-label">17 anos (hoje)</div><div class="tl-desc">Vestibular em outubro de 2026</div></div>
+        <div class="timeline-item"><div class="tl-label">18 anos — 2027</div><div class="tl-desc">Início da faculdade (5 anos)</div></div>
+        <div class="timeline-item"><div class="tl-label">21–22 anos</div><div class="tl-desc">Estágio a partir do 4º ano</div></div>
+        <div class="timeline-item"><div class="tl-label">23 anos — 2031</div><div class="tl-desc">Formatura + Exame da OAB</div></div>
+        <div class="timeline-item"><div class="tl-label">23–27 anos</div><div class="tl-desc">Se advocacia: início imediato. Se concurso: 2–4 anos de preparação</div></div>
+        <div class="timeline-item"><div class="tl-label">25–27 anos</div><div class="tl-desc">Carreira estabelecida 🎯</div></div>
+      </div>
+
+      <h3>Tabela completa de concursos jurídicos</h3>
+      <div style="overflow-x:auto;">
+      <table class="compare-table">
+        <thead><tr><th>Carreira</th><th>Requisitos</th><th>Remuneração</th><th>Home office</th></tr></thead>
+        <tbody>
+          <tr><td>Defensor Público</td><td>OAB + 2 anos</td><td>R$ 22k–33k</td><td><span class="pill pill-orange">Parcial</span></td></tr>
+          <tr><td>Procurador do Estado</td><td>OAB + 3 anos</td><td>R$ 25k–35k</td><td><span class="pill pill-orange">Parcial</span></td></tr>
+          <tr><td>Procurador Federal</td><td>OAB</td><td>R$ 22k–27k</td><td><span class="pill pill-orange">Parcial</span></td></tr>
+          <tr><td>Juiz de Direito</td><td>OAB + 3 anos</td><td>R$ 33k–35k</td><td><span class="pill pill-gray">Baixo</span></td></tr>
+          <tr><td>Promotor de Justiça</td><td>OAB + 3 anos</td><td>R$ 33k–35k</td><td><span class="pill pill-gray">Baixo</span></td></tr>
+          <tr><td>Cartório</td><td>OAB + concurso</td><td>R$ 30k–200k+</td><td><span class="pill pill-gray">Baixo</span></td></tr>
+          <tr><td>Analista Judiciário</td><td>Graduação</td><td>R$ 13k–16k</td><td><span class="pill pill-orange">Parcial</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <div class="mission-box">
+        <div class="mission-header">🎯 Missão para Julho — Mapa da minha carreira</div>
+        <p>Monte 2 caminhos possíveis para depois da formatura. Para cada um, descreva as etapas, o que ganha e o que perde.</p>
+
+        <div class="path-builder">
+          <div class="path-col">
+            <h4>Caminho A</h4>
+            <label class="field-label" style="color:var(--brand-blue);">Nome do caminho</label>
+            <input class="field-input" type="text" data-key="path_a_nome" placeholder="Ex: Advocacia autônoma (home office)">
+            <label class="field-label" style="color:var(--brand-blue);">Etapas</label>
+            <textarea class="field" data-key="path_a_etapas" placeholder="Faculdade → OAB → ..." style="min-height:80px;background:rgba(255,255,255,0.7);"></textarea>
+            <label class="field-label" style="color:var(--brand-blue);">O que ganho</label>
+            <textarea class="field" data-key="path_a_ganho" placeholder="Liberdade, flexibilidade..." style="min-height:60px;background:rgba(255,255,255,0.7);"></textarea>
+            <label class="field-label" style="color:var(--brand-blue);">O que perco / abro mão</label>
+            <textarea class="field" data-key="path_a_perco" placeholder="Estabilidade, salário fixo..." style="min-height:60px;background:rgba(255,255,255,0.7);"></textarea>
+          </div>
+          <div class="path-col">
+            <h4>Caminho B</h4>
+            <label class="field-label" style="color:var(--brand-blue);">Nome do caminho</label>
+            <input class="field-input" type="text" data-key="path_b_nome" placeholder="Ex: Concurso (Defensoria)">
+            <label class="field-label" style="color:var(--brand-blue);">Etapas</label>
+            <textarea class="field" data-key="path_b_etapas" placeholder="Faculdade → OAB → 2 anos prática → ..." style="min-height:80px;background:rgba(255,255,255,0.7);"></textarea>
+            <label class="field-label" style="color:var(--brand-blue);">O que ganho</label>
+            <textarea class="field" data-key="path_b_ganho" placeholder="Estabilidade, propósito..." style="min-height:60px;background:rgba(255,255,255,0.7);"></textarea>
+            <label class="field-label" style="color:var(--brand-blue);">O que perco / abro mão</label>
+            <textarea class="field" data-key="path_b_perco" placeholder="Tempo de preparação, flexibilidade..." style="min-height:60px;background:rgba(255,255,255,0.7);"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <h3>Minhas anotações</h3>
+      <textarea class="field" data-key="enc1_minhas_notas" placeholder="O que eu aprendi nesse encontro... Qual caminho me atraiu mais..."></textarea>
+    </div>
+  </div>
+
+    <!-- ============ ENCONTRO 2 - JULHO ============ -->
+  <div class="encounter" id="enc2">
+    <div class="card">
+      <h2><span class="icon" style="background:var(--positive-quiet);color:var(--positive-loud);">📚</span> Encontro 2 — Julho</h2>
+      <div class="subtitle">O Direito por dentro • Realidade da graduação e áreas de atuação</div>
+
+      <h3>Mapa das áreas do Direito</h3>
+      <div style="overflow-x:auto;">
+      <table class="compare-table">
+        <thead><tr><th>Área</th><th>O que faz</th><th>Perfil</th><th>Home office</th></tr></thead>
+        <tbody>
+          <tr><td>Civil</td><td>Contratos, família, herança, consumidor</td><td>Mediação, resolver questões do dia a dia</td><td><span class="pill pill-orange">Parcial</span></td></tr>
+          <tr><td>Penal</td><td>Defesa ou acusação em crimes</td><td>Debates intensos, argumentação</td><td><span class="pill pill-gray">Baixo</span></td></tr>
+          <tr><td>Trabalhista</td><td>Relação empregado × empregador</td><td>Injustiça no trabalho</td><td><span class="pill pill-green">Alto</span></td></tr>
+          <tr><td>Tributário</td><td>Impostos, planejamento fiscal</td><td>Números, organização, detalhes</td><td><span class="pill pill-green">Alto</span></td></tr>
+          <tr><td>Digital / LGPD</td><td>Proteção de dados, crimes digitais</td><td>Tecnologia, inovação</td><td><span class="pill pill-green">Muito alto</span></td></tr>
+          <tr><td>Ambiental / ESG</td><td>Meio ambiente, sustentabilidade</td><td>Natureza, responsabilidade social</td><td><span class="pill pill-orange">Parcial</span></td></tr>
+          <tr><td>Previdenciário</td><td>Aposentadorias, benefícios INSS</td><td>Ajudar pessoas com burocracia</td><td><span class="pill pill-green">Alto</span></td></tr>
+          <tr><td>Família</td><td>Divórcio, guarda, adoção</td><td>Empatia, escuta, acolhimento</td><td><span class="pill pill-orange">Parcial</span></td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h3>O que esperar da faculdade</h3>
+      <ul>
+        <li><strong>Duração:</strong> 5 anos (10 semestres)</li>
+        <li><strong>Rotina:</strong> muita leitura (doutrinas, leis, jurisprudência), redação de peças, seminários, debates</li>
+        <li><strong>Primeiras matérias:</strong> Introdução ao Direito, Filosofia, Sociologia Jurídica, Constitucional, Civil</li>
+        <li><strong>Estágio:</strong> a partir do 7º semestre</li>
+        <li><strong>TCC:</strong> monografia ou artigo científico</li>
+      </ul>
+
+      <h3>Recursos sugeridos</h3>
+      <div class="resource-item"><div class="resource-icon" style="background:var(--negative-loud);color:#fff;">▶</div><div><div class="r-name">Trilhante (YouTube)</div><div class="r-desc">Aulas gratuitas e objetivas sobre várias áreas do Direito</div></div></div>
+      <div class="resource-item"><div class="resource-icon" style="background:var(--brand-blue);color:#fff;">▶</div><div><div class="r-name">Prof. Wander Garcia (YouTube)</div><div class="r-desc">Foco em carreira, OAB e concursos</div></div></div>
+      <div class="resource-item"><div class="resource-icon" style="background:var(--positive-loud);color:#fff;">🎧</div><div><div class="r-name">Café com Direito (Podcast)</div><div class="r-desc">Carreira e estudos jurídicos</div></div></div>
+      <div class="resource-item"><div class="resource-icon" style="background:#d74009;color:#fff;">🎧</div><div><div class="r-name">Migalhas Podcast</div><div class="r-desc">Notícias jurídicas do dia a dia</div></div></div>
+      <div class="resource-item"><div class="resource-icon" style="background:var(--gray-700);color:#fff;">🎧</div><div><div class="r-name">Sem Precedentes — Jota</div><div class="r-desc">Decisões do STF explicadas</div></div></div>
+
+      <div class="mission-box">
+        <div class="mission-header">🎯 Missão para Agosto — Explorar as áreas</div>
+        <p>Assista a pelo menos 3 vídeos/podcasts de advogados de áreas diferentes e preencha a tabela:</p>
+        <table class="int-table">
+          <thead><tr><th>Vídeo / Podcast</th><th>Área do Direito</th><th>O que me atraiu</th><th>O que me assustou</th></tr></thead>
+          <tbody>
+            <tr><td><input type="text" data-key="vid1_nome" placeholder="Nome do vídeo..."></td><td><input type="text" data-key="vid1_area" placeholder="Área..."></td><td><textarea data-key="vid1_bom" placeholder="O que gostei..."></textarea></td><td><textarea data-key="vid1_ruim" placeholder="O que me preocupou..."></textarea></td></tr>
+            <tr><td><input type="text" data-key="vid2_nome" placeholder="Nome do vídeo..."></td><td><input type="text" data-key="vid2_area" placeholder="Área..."></td><td><textarea data-key="vid2_bom" placeholder="O que gostei..."></textarea></td><td><textarea data-key="vid2_ruim" placeholder="O que me preocupou..."></textarea></td></tr>
+            <tr><td><input type="text" data-key="vid3_nome" placeholder="Nome do vídeo..."></td><td><input type="text" data-key="vid3_area" placeholder="Área..."></td><td><textarea data-key="vid3_bom" placeholder="O que gostei..."></textarea></td><td><textarea data-key="vid3_ruim" placeholder="O que me preocupou..."></textarea></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Minhas anotações</h3>
+      <textarea class="field" data-key="enc2b_minhas_notas" placeholder="O que eu aprendi nesse encontro... O que me surpreendeu..."></textarea>
+    </div>
+  </div>
+
+    <!-- ============ ENCONTRO 3 - AGOSTO ============ -->
+  <div class="encounter" id="enc3">
+    <div class="card">
+      <h2><span class="icon" style="background:var(--caution-quiet);color:var(--caution-loud);">🤖</span> Encontro 3 — Agosto</h2>
+      <div class="subtitle">Direito no mundo real de 2026 • Mercado de trabalho, IA e o novo cenário</div>
+
+      <h3>O mercado em números</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:20px;">
+        <div style="background:var(--info-quiet);border-radius:16px;padding:20px;text-align:center;">
+          <div style="font-size:28px;font-weight:700;color:var(--brand-blue);">~1,4M</div>
+          <div style="font-size:12px;color:var(--text-secondary);font-weight:600;">Advogados no Brasil</div>
+        </div>
+        <div style="background:var(--caution-quiet);border-radius:16px;padding:20px;text-align:center;">
+          <div style="font-size:28px;font-weight:700;color:var(--caution-loud);">15–25%</div>
+          <div style="font-size:12px;color:var(--text-secondary);font-weight:600;">Aprovação na OAB (1ª fase)</div>
+        </div>
+        <div style="background:var(--positive-quiet);border-radius:16px;padding:20px;text-align:center;">
+          <div style="font-size:28px;font-weight:700;color:var(--positive-loud);">10–15%</div>
+          <div style="font-size:12px;color:var(--text-secondary);font-weight:600;">Aprovados nas duas fases</div>
+        </div>
+      </div>
+
+      <h3>IA na advocacia — o que muda e o que fica</h3>
+      <div style="overflow-x:auto;">
+      <table class="compare-table">
+        <thead><tr><th>O que a IA já faz</th><th>O que a IA NÃO faz (humano)</th></tr></thead>
+        <tbody>
+          <tr><td>Pesquisa de jurisprudência em segundos</td><td>Ouvir o cliente com empatia</td></tr>
+          <tr><td>Redação de petições repetitivas</td><td>Estratégia processual criativa</td></tr>
+          <tr><td>Análise de contratos (due diligence)</td><td>Negociação e mediação</td></tr>
+          <tr><td>Cálculos trabalhistas/previdenciários</td><td>Audiências e sustentação oral</td></tr>
+          <tr><td>Triagem e classificação de processos</td><td>Interpretação ética de situações complexas</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h3>Ferramentas de IA usadas no Brasil</h3>
+      <p><strong>Jusbrasil</strong> (pesquisa com IA), <strong>Turivius</strong> (jurimetria), <strong>Looplex</strong> (automação de documentos), <strong>Astrea</strong> (gestão de processos), <strong>Doc9</strong> (correspondência jurídica)</p>
+
+      <div class="tip-card">
+        <h4>💡 Ponto importante</h4>
+        <p>A IA não vai acabar com a advocacia — vai acabar com o advogado que só faz trabalho repetitivo. Quem souber usar a IA a favor vai ter vantagem enorme.</p>
+      </div>
+
+      <h3>Trabalho remoto no Direito</h3>
+      <ul>
+        <li><strong>Consultivo (contratos, tributário, LGPD):</strong> altíssimo potencial remoto</li>
+        <li><strong>Contencioso:</strong> parcialmente remoto — audiências virtuais se consolidaram pós-pandemia</li>
+        <li><strong>Peticionamento eletrônico:</strong> PJe, e-SAJ, PROJUDI — tudo online</li>
+        <li><strong>Advocacia correspondente:</strong> Doc9, Jurídico Certo para diligências presenciais</li>
+      </ul>
+
+      <div class="mission-box">
+        <div class="mission-header">🎯 Missão para Setembro — Entrevistar 2 profissionais</div>
+        <p>Converse com 2 pessoas que trabalham com Direito (perfis diferentes). Use o roteiro:</p>
+        <ol style="margin-top:8px;">
+          <li>Como é um dia típico seu de trabalho?</li>
+          <li>Você trabalha presencial, híbrido ou remoto?</li>
+          <li>Indicaria a carreira de Direito para alguém de 17 anos hoje?</li>
+          <li>O que a IA mudou na sua rotina?</li>
+          <li>Qual área tem mais futuro?</li>
+          <li>Se pudesse voltar no tempo, faria algo diferente na faculdade?</li>
+        </ol>
+
+        <h4 style="margin-top:20px;font-size:14px;font-weight:700;color:var(--brand-blue);">Entrevista 1</h4>
+        <label class="field-label" style="color:var(--brand-blue);">Nome e área de atuação</label>
+        <input class="field-input" type="text" data-key="ent1_nome" placeholder="Ex: Dr. Marcos — Direito Trabalhista">
+        <label class="field-label" style="color:var(--brand-blue);">Principais respostas e insights</label>
+        <textarea class="field" data-key="ent1_respostas" placeholder="O que essa pessoa disse que mais chamou atenção..." style="background:rgba(255,255,255,0.7);"></textarea>
+
+        <h4 style="margin-top:20px;font-size:14px;font-weight:700;color:var(--brand-blue);">Entrevista 2</h4>
+        <label class="field-label" style="color:var(--brand-blue);">Nome e área de atuação</label>
+        <input class="field-input" type="text" data-key="ent2_nome" placeholder="Ex: Dra. Ana — Direito Digital">
+        <label class="field-label" style="color:var(--brand-blue);">Principais respostas e insights</label>
+        <textarea class="field" data-key="ent2_respostas" placeholder="O que essa pessoa disse que mais chamou atenção..." style="background:rgba(255,255,255,0.7);"></textarea>
+      </div>
+
+      <h3>Minhas anotações</h3>
+      <textarea class="field" data-key="enc3b_minhas_notas" placeholder="O que eu aprendi nesse encontro... O que me surpreendeu..."></textarea>
+    </div>
+  </div>
+
+    <!-- ============ ENCONTRO 4 - SETEMBRO ============ -->
+  <div class="encounter" id="enc4">
+    <div class="card">
+      <h2><span class="icon" style="background:#ffedc7;color:#d74009;">🔥</span> Encontro 4 — Setembro</h2>
+      <div class="subtitle">Teste de convicção • Confronto entre expectativa e realidade</div>
+
+      <h3>Relendo a carta do primeiro encontro</h3>
+      <p>Releia a carta que você escreveu no primeiro mês. O que mudou na sua visão desde então?</p>
+      <label class="field-label">O que mudou entre o primeiro encontro e agora?</label>
+      <textarea class="field" data-key="reflexao_carta" placeholder="O que eu pensava antes... O que penso agora..."></textarea>
+
+      <h3>Exercício “E se não fosse Direito?”</h3>
+      <p>Pense em outras profissões que também te atraem. Não é para gerar dúvida — é para <strong>confirmar</strong> sua escolha:</p>
+      <table class="int-table">
+        <thead><tr><th>Profissão alternativa</th><th>Por que também me atrai</th><th>O que o Direito tem que essa não tem</th></tr></thead>
+        <tbody>
+          <tr><td><input type="text" data-key="alt1_prof" placeholder="Ex: Psicologia"></td><td><textarea data-key="alt1_porque" placeholder="Também ajuda pessoas..."></textarea></td><td><textarea data-key="alt1_direito" placeholder="O Direito tem..."></textarea></td></tr>
+          <tr><td><input type="text" data-key="alt2_prof" placeholder="Ex: Serviço Social"></td><td><textarea data-key="alt2_porque" placeholder="Impacto social..."></textarea></td><td><textarea data-key="alt2_direito" placeholder="O Direito tem..."></textarea></td></tr>
+          <tr><td><input type="text" data-key="alt3_prof" placeholder="Ex: Jornalismo"></td><td><textarea data-key="alt3_porque" placeholder="Comunicação..."></textarea></td><td><textarea data-key="alt3_direito" placeholder="O Direito tem..."></textarea></td></tr>
+        </tbody>
+      </table>
+
+      <h3>Meus medos e inseguranças</h3>
+      <label class="field-label">Escreva aqui o que te preocupa sobre o vestibular, a faculdade ou a carreira. Colocar no papel ajuda a organizar.</label>
+      <textarea class="field" data-key="enc4_meus_medos" placeholder="O que me preocupa... O que me dá medo... O que me deixa insegura..."></textarea>
+
+      <div class="mission-box">
+        <div class="mission-header">🎯 Missão para Outubro — Declaração de escolha</div>
+        <p>Escreva um parágrafo de 5 linhas completando:</p>
+        <p style="font-weight:700;font-size:16px;margin:12px 0;color:var(--brand-blue);">“Eu escolho cursar Direito porque...”</p>
+        <p>Use suas próprias palavras, sem clichês. Inclua pelo menos uma coisa que descobriu nos últimos meses. Se travar, tudo bem — essa dificuldade também é informação.</p>
+        <textarea class="field" data-key="declaracao" placeholder="Eu escolho cursar Direito porque..." style="min-height:160px;background:rgba(255,255,255,0.7);font-size:16px;line-height:1.8;"></textarea>
+      </div>
+    </div>
+  </div>
+
+    <!-- ============ ENCONTRO 5 - OUTUBRO ============ -->
+  <div class="encounter" id="enc5">
+    <div class="card">
+      <h2><span class="icon" style="background:var(--brand-yellow);color:var(--gray-900);">🎯</span> Encontro 5 — Outubro</h2>
+      <div class="subtitle">Largada • Validação da decisão + preparação emocional para o vestibular</div>
+
+      <h3>Faculdades no RS para considerar</h3>
+      <div style="overflow-x:auto;">
+      <table class="compare-table">
+        <thead><tr><th>Instituição</th><th>Tipo</th><th>Destaque</th></tr></thead>
+        <tbody>
+          <tr><td>UFRGS</td><td><span class="pill pill-green">Pública</span></td><td>Melhor do RS, entre as melhores do Brasil</td></tr>
+          <tr><td>UFSM</td><td><span class="pill pill-green">Pública</span></td><td>Boa avaliação, interior do estado</td></tr>
+          <tr><td>UFPel</td><td><span class="pill pill-green">Pública</span></td><td>Boa opção no sul do estado</td></tr>
+          <tr><td>FURG</td><td><span class="pill pill-green">Pública</span></td><td>Em crescimento</td></tr>
+          <tr><td>PUCRS</td><td><span class="pill pill-blue">Particular</span></td><td>Tradição forte, Selo OAB Recomenda</td></tr>
+          <tr><td>Unisinos</td><td><span class="pill pill-blue">Particular</span></td><td>Pós-graduação excelente, pesquisa forte</td></tr>
+          <tr><td>UCS</td><td><span class="pill pill-blue">Particular</span></td><td>Referência na Serra Gaúcha</td></tr>
+        </tbody>
+      </table>
+      </div>
+
+      <h3>Sugestões de leitura (presente de despedida)</h3>
+      <div class="resource-item"><div class="resource-icon" style="background:var(--info-quiet);color:var(--brand-blue);">📖</div><div><div class="r-name">O Caso dos Denunciantes Invejosos — Lon Fuller</div><div class="r-desc">Introdução ao raciocínio jurídico, curto e provocativo</div></div></div>
+      <div class="resource-item"><div class="resource-icon" style="background:var(--info-quiet);color:var(--brand-blue);">📖</div><div><div class="r-name">Justiça: O que é fazer a coisa certa — Michael Sandel</div><div class="r-desc">Filosofia moral aplicada ao Direito, linguagem acessível</div></div></div>
+      <div class="resource-item"><div class="resource-icon" style="background:var(--info-quiet);color:var(--brand-blue);">📖</div><div><div class="r-name">O Ponto de Inflexão — Malcolm Gladwell</div><div class="r-desc">Ensina a pensar sobre padrões e decisões</div></div></div>
+
+      <h3>Minhas reflexões finais</h3>
+      <label class="field-label">Como você está se sentindo depois desses 6 meses? O que aprendeu sobre você mesma?</label>
+      <textarea class="field" data-key="enc5_reflexao_final" placeholder="O que eu sinto agora... O que mudou em mim..." style="min-height:160px;"></textarea>
+    </div>
+  </div>
+
+
+
+
+</div>
+
+<!-- Save bar -->
+<div class="save-bar">
+  <button class="btn btn-primary" onclick="saveData()">💾 Salvar progresso</button>
+  <button class="btn btn-secondary" onclick="exportData()">📥 Exportar dados</button>
+</div>
+
+<!-- Toast -->
+<div class="toast" id="toast">Progresso atualizado!</div>
+
+<!-- Footer -->
+<div class="footer">
+  <br>
+  Generado con html-builder · 2026-04-16
+</div>
+
+<script>
+// ── Lock / tab logic ────────────────────────────────────
+var UNLOCK_MONTHS = [6, 6, 7, 8, 9, 10];
+var MONTH_NAMES   = ['Junho','Junho','Julho','Agosto','Setembro','Outubro'];
+
+function currentMonthYear() {
+  var d = new Date();
+  return { year: d.getFullYear(), month: d.getMonth() + 1 };
+}
+function isUnlocked(idx) {
+  var now = currentMonthYear();
+  return (now.year > 2026) || (now.year === 2026 && now.month >= UNLOCK_MONTHS[idx]);
+}
+function applyLocks() {
+  document.querySelectorAll('.tab').forEach(function(t, idx) {
+    t.classList[isUnlocked(idx) ? 'remove' : 'add']('locked');
+  });
+}
+function showTab(idx) {
+  if (!isUnlocked(idx)) { showToast('Este encontro abre em ' + MONTH_NAMES[idx]); return; }
+  document.querySelectorAll('.encounter').forEach(function(e) { e.classList.remove('active'); });
+  document.querySelectorAll('.tab').forEach(function(t) { t.classList.remove('active'); });
+  document.getElementById('enc' + idx).classList.add('active');
+  document.querySelectorAll('.tab')[idx].classList.add('active');
+  window.scrollTo(0, 0);
+}
+
+// ── Progress ─────────────────────────────────────────────
+var monthStates = [false,false,false,false,false,false];
+function updateProgressUI() {
+  var count = monthStates.filter(Boolean).length;
+  document.getElementById('progressBar').style.width = Math.round(count/6*100) + '%';
+  document.getElementById('progressLabel').textContent = count + ' de 6 encontros concluídos';
+  for (var i = 0; i < 6; i++) {
+    document.getElementById('dot' + i).classList[monthStates[i] ? 'add' : 'remove']('completed');
+  }
+}
+function toggleMonth(idx) {
+  monthStates[idx] = !monthStates[idx];
+  updateProgressUI();
+  saveAll();
+  showToast('Progresso atualizado!');
+}
+
+// ── Persist: Grid when available, localStorage as fallback ──
+function collectFields() {
+  var data = {};
+  document.querySelectorAll('[data-key]').forEach(function(f) {
+    data[f.getAttribute('data-key')] = f.type === 'checkbox' ? f.checked : f.value;
+  });
+  return data;
+}
+function saveAll() {
+  var payload = { months: monthStates, fields: collectFields(), selectedValues: selectedValues };
+  if (window.GRID && window.GRID.state) {
+    window.GRID.state.set(payload).catch(function(){});
+  } else {
+    try { localStorage.setItem('graziela_mentoria', JSON.stringify(payload)); } catch(e){}
+  }
+}
+function loadAll() {
+  if (window.GRID && window.GRID.state) {
+    window.GRID.state.get().then(function(r) { applyPayload(r && r.state); }).catch(function(){});
+  } else {
+    try { applyPayload(JSON.parse(localStorage.getItem('graziela_mentoria'))); } catch(e){}
+  }
+}
+function applyPayload(s) {
+  if (!s) return;
+  if (s.months) { monthStates = s.months; updateProgressUI(); }
+  if (s.fields) {
+    Object.keys(s.fields).forEach(function(k) {
+      var el = document.querySelector('[data-key="' + k + '"]');
+      if (!el) return;
+      el.type === 'checkbox' ? (el.checked = s.fields[k]) : (el.value = s.fields[k]);
+    });
+  }
+  if (s.selectedValues) { selectedValues = s.selectedValues; restoreSelectedValues(); }
+}
+function saveData()   { saveAll(); showToast('Progresso salvo!'); }
+
+// ── Export ───────────────────────────────────────────────
+function exportData() {
+  var fields = document.querySelectorAll('[data-key]');
+  var lines = ['PLANO DE MENTORIA - GRAZIELA','Exportado em: ' + new Date().toLocaleDateString('pt-BR'),''];
+  fields.forEach(function(f) {
+    var val = f.type === 'checkbox' ? (f.checked ? 'Sim' : '') : f.value;
+    if (val) { lines.push(f.getAttribute('data-key').replace(/_/g,' ').toUpperCase() + ':'); lines.push(val); lines.push(''); }
+  });
+  var blob = new Blob([lines.join('\n')], { type: 'text/plain;charset=utf-8' });
+  var url  = URL.createObjectURL(blob);
+  var a    = document.createElement('a');
+  a.href = url; a.download = 'mentoria-graziela-export.txt'; a.click();
+  URL.revokeObjectURL(url);
+  showToast('Dados exportados!');
+}
+
+// ── Toast ────────────────────────────────────────────────
+function showToast(msg) {
+  var t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('show');
+  setTimeout(function() { t.classList.remove('show'); }, 2500);
+}
+
+// ── Value cards ──────────────────────────────────────────
+var ALL_VALUES = [
+  'Justiça','Empatia','Coragem','Verdade','Proteção',
+  'Impacto','Autonomia','Lealdade','Integridade','Igualdade',
+  'Liberdade','Cuidado','Propósito','Responsabilidade',
+  'Persistência','Criatividade','Solidariedade','Transparência',
+  'Dignidade','Transformação'
+];
+var selectedValues = [];
+function buildValueGrid() {
+  var grid = document.getElementById('valueGrid');
+  if (!grid) return;
+  grid.innerHTML = '';
+  ALL_VALUES.forEach(function(v) {
+    var btn = document.createElement('button');
+    btn.textContent = v;
+    btn.setAttribute('data-value', v);
+    btn.style.cssText = 'padding:8px 16px;border-radius:9999px;border:2px solid var(--border-primary);background:#fff;font-family:var(--font);font-size:13px;font-weight:600;cursor:pointer;transition:all 0.2s;color:var(--text-secondary);';
+    btn.addEventListener('click', function() { toggleValue(v, btn); });
+    grid.appendChild(btn);
+  });
+  restoreSelectedValues();
+}
+function toggleValue(v, btn) {
+  var idx = selectedValues.indexOf(v);
+  if (idx > -1) {
+    selectedValues.splice(idx, 1);
+    btn.style.background = '#fff'; btn.style.color = 'var(--text-secondary)'; btn.style.borderColor = 'var(--border-primary)';
+  } else {
+    if (selectedValues.length >= 5) { showToast('Máximo de 5 valores'); return; }
+    selectedValues.push(v);
+    btn.style.background = 'var(--brand-blue)'; btn.style.color = '#fff'; btn.style.borderColor = 'var(--brand-blue)';
+  }
+  document.getElementById('valueCount').textContent = selectedValues.length + ' de 5 selecionados';
+  saveAll();
+}
+function restoreSelectedValues() {
+  selectedValues.forEach(function(v) {
+    var btn = document.querySelector('[data-value="' + v + '"]');
+    if (btn) { btn.style.background = 'var(--brand-blue)'; btn.style.color = '#fff'; btn.style.borderColor = 'var(--brand-blue)'; }
+  });
+  var el = document.getElementById('valueCount');
+  if (el) el.textContent = selectedValues.length + ' de 5 selecionados';
+}
+
+// ── Init ─────────────────────────────────────────────────
+buildValueGrid();
+applyLocks();
+updateProgressUI();
+loadAll();
+
+document.addEventListener('input', function(e) {
+  if (e.target.hasAttribute('data-key')) {
+    clearTimeout(window._saveTimer);
+    window._saveTimer = setTimeout(saveAll, 2000);
+  }
+});
+</script>
+
+
+
+</body></html>
